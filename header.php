@@ -38,7 +38,7 @@
 <body id="home" <?php body_class(); ?>>
 <!---->
 <header>
-    <div class="row justify-content-start header-top">
+    <div class="row justify-content-start header-top py-2">
 		<div class="col-md-2">
         <p><img src="<?php echo get_template_directory_uri(); ?>/images/tel.png" alt="">082-814-2658 </p>
       </div>
@@ -87,7 +87,7 @@
           <a class="nav-link pl-1" href="page-profile.php">事務所概要</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link pl-1" href="page-research.php">不動産調査</a> 
+          <a class="nav-link pl-1" href="page-research.php">不動産調査</a>
         </li>
       </ul>
     </div>

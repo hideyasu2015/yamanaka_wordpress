@@ -6,7 +6,7 @@
 
 <!--メンバー紹介-->
 <div class="container">
-  <div class="row m-2 border-top border-bottom" id="member">
+  <div class="row m-2 border-top border-bottom" id="<?php the_ID();?>">
     <div class="col-11 offset-1">
       <h1><?php the_title(); ?></h1>
     </div>

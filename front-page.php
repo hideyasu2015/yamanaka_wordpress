@@ -46,7 +46,7 @@
       <div class="row">
         <div class="col-md-6 col-lg-3">
           <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-duration="1000">
-            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/human2.png" alt="">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_1.png" alt="">
             <div class="team-name-box py-2">
               <p>山中　匠</p>
               <p>土地家屋調査士</p>
@@ -55,52 +55,52 @@
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block">profile</button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(352)) ?>">profile</a></button>
               </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
-            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/human5.jpg" alt="">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_2.jpg" alt="">
             <div class="team-name-box py-2">
-              <p>山中　匠</p>
+              <p>山中　XX</p>
               <p>土地家屋調査士</p>
             </div>
             <div class="card-body">
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block">profile</button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(352)) ?>">profile</a></button>
               </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
-            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/human2.png" alt="">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_3.png" alt="">
             <div class="team-name-box py-2">
-              <p>山中　匠</p>
+              <p>山中　渉</p>
               <p>土地家屋調査士</p>
             </div>
             <div class="card-body">
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block">profile</button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(352)) ?>">profile</a></button>
               </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="600" data-aos-duration="1000">
-            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/human2.png" alt="">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_4.png" alt="">
             <div class="team-name-box py-2">
-              <p>山中　匠</p>
+              <p>星野　XX</p>
               <p>土地家屋調査士</p>
             </div>
             <div class="card-body">
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block">profile</button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block" style="color:#fff;"><a href="<?php echo esc_url(get_page_link(352)) ?>">profile</a></button>
               </div>
           </div>
         </div>
