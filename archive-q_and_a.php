@@ -5,6 +5,23 @@ while ( have_posts() ) : the_post();
 ?>
 
 	<div class="container">
+		<div class="row m-2 border-top border-bottom" id="q_and_a">
+		    <h1>Q and A</h1>
+		</div>
+		<?php
+			$customerVoice = new WP_Query(array(
+				'post_per_page' => 2,
+				'post_type' => 'customer_voice'
+			));
+			while($customerVoice->have_posts()){
+				$customerVoice->the_post(); ?>
+
+
+
+				      <?php }
+				      ?>
+
+							
 <div class="row m-2 border-top border-bottom" id="q_and_a">
     <h1><?php the_title(); ?></h1>
 </div>
@@ -64,5 +81,8 @@ while ( have_posts() ) : the_post();
   </div>
   <br>
 </div>
-
+<?php
+			endwhile;
+		endif;
+		?>
 <?php get_footer();?>

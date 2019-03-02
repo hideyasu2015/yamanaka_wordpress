@@ -55,7 +55,7 @@
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(352)) ?>">profile</a></button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(44)) ?>">profile</a></button>
               </div>
           </div>
         </div>
@@ -70,7 +70,7 @@
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(352)) ?>">profile</a></button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(48)) ?>">profile</a></button>
               </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(352)) ?>">profile</a></button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(46)) ?>">profile</a></button>
               </div>
           </div>
         </div>
@@ -100,7 +100,7 @@
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block" style="color:#fff;"><a href="<?php echo esc_url(get_page_link(352)) ?>">profile</a></button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block" style="color:#fff;"><a href="<?php echo esc_url(get_page_link(50)) ?>">profile</a></button>
               </div>
           </div>
         </div>
@@ -112,46 +112,43 @@
 <section id="box-section">
   <div class="container">
     <h2 data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">お客さまの声</h2>
+
     <div class="box-lists">
       <div class="row">
+        <?php
+          $customerVoice = new WP_Query(array(
+            'post_per_page' => 2,
+            'post_type' => 'customer_voice'
+          ));
+          while($customerVoice->have_posts()){
+            $customerVoice->the_post(); ?>
+
         <div class="col-md-6">
           <div class="row py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in">
             <div class="col-1 custmor-quote"> <i class="fas fa-quote-left fa-lg color-red"></i>
               <!--					<img src="images/quote.png" alt="">-->
             </div>
             <div class="col-11 customor-voice">
-              <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</p>
-              <a href="">
+              <dl>
+                <dt><?php the_title(); ?></dt>
+                <dd><?php echo wp_trim_words( get_the_content(), 55, '...' ); ?></dd>
+              </dl>
+              <a href="<?php the_permalink(); ?>">
               <p>read more</p>
               </a> </div>
           </div>
           <div class="row px-3">
             <div class="col-2"> <img src="<?php echo get_template_directory_uri(); ?>/images/human1r.jpg" class="img-fluid" alt=""> </div>
             <div class="col-10">
-              <p>Aiu Eo<br>
-                <small>company name</small> </p>
+              <p><?php the_field('customer_name'); ?><br>
+                <small><?php the_field('company'); ?></small> </p>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="row py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in">
-            <div class="col-1 custmor-quote"> <i class="fas fa-quote-left fa-lg color-red"></i>
-              <!--					<img src="images/quote.png" alt=""> quoteの画像の場所？-->
-            </div>
-            <div class="col-11">
-              <p>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</p>
-              <a href="">
-              <p>read more</p>
-              </a> </div>
-          </div>
-			<div class="row px-3">
-            <div class="col-2"> <img src="<?php echo get_template_directory_uri(); ?>/images/human1r.jpg" class="img-fluid" alt=""> </div>
-            <div class="col-10">
-              <p>Aiu Eo<br>
-                <small>company name</small> </p>
-            </div>
-          </div>
-        </div>
+
+      <?php }
+      ?>
+
       </div>
     </div>
   </div>
@@ -160,26 +157,29 @@
 <seciton id="blog-section">
   <div class="container">
 	  <h2 data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">NEWS</h2>
-	  <div class="row m-2 slide-left">
+    <?php
+      $news = new WP_Query(array(
+        'post_per_page' => 2,
+        'post_type' => 'news'
+      ));
+      while($news->have_posts()){
+        $news->the_post(); ?>
+
+	  <div class="row m-2 slide-left" data-aos-offset="400" data-aos="fade-in">
 		  <div class="col-2 col-md-1">
 			   <img src="<?php echo get_template_directory_uri(); ?>/images/news.png" class="img-fluid" alt="">
 		  </div>
 		  <div class="col-10 col-md-11 ">
-			<p class="news-day">2018年12月11日</p>
-            <p class="news-title">こんにちは</p>
-            <p class="news-desc">こんにちは。この度・・・</p>
+			<time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日(1)'); ?></time>
+            <p class="news-title"><?php the_title(); ?></p>
+            <p class="news-desc"><?php echo wp_trim_words( get_the_content(), 20, '...' ); ?></p>
+            <a href="<?php the_permalink(); ?>">
+            <p>read more</p>
+            </a>
 		  </div>
 	  </div>
-	  <div class="row m-2">
-		  <div class="col-2 col-md-1">
-			   <img src="<?php echo get_template_directory_uri(); ?>/images/news.png" class="img-fluid" alt="">
-		  </div>
-		  <div class="col-10 col-md-11">
-			<p class="news-day">2018年12月11日</p>
-            <p class="news-title">こんにちは</p>
-            <p class="news-desc">こんにちは。この度・・・</p>
-		  </div>
-	  </div>
+          <?php }
+          ?>
 	  </div>
 </seciton>
 
