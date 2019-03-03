@@ -2,17 +2,17 @@
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="4000">
-      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/law1.jpg" alt="第1スライド">
+    <div class="carousel-item active" data-interval="3000">
+      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_commandview.jpg" alt="第1スライド">
     </div>
-    <div class="carousel-item" data-interval="4000">
-      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/law2.jpg" alt="第2スライド">
+    <div class="carousel-item" data-interval="3000">
+      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_family.jpg" alt="第2スライド">
     </div>
-    <div class="carousel-item" data-interval="4000">
-      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/law3.jpg" alt="第3スライド">
+    <div class="carousel-item" data-interval="3000">
+      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_shakehands.jpg" alt="第3スライド">
     </div>
-	  <div class="carousel-item" data-interval="4000">
-      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/law4.jpg" alt="第４スライド">
+	  <div class="carousel-item" data-interval="3000">
+      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_shelf.jpg" alt="第４スライド">
     </div>
   </div>
 </div>
@@ -55,7 +55,7 @@
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(44)) ?>">profile</a></button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link('member-1')) ?>">profile</a></button>
               </div>
           </div>
         </div>
@@ -70,7 +70,7 @@
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(48)) ?>">profile</a></button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link('member-2')) ?>">profile</a></button>
               </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link(46)) ?>">profile</a></button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link('member-3')) ?>">profile</a></button>
               </div>
           </div>
         </div>
@@ -100,7 +100,7 @@
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
-              <button type="button" class="btn btn-primary mx-auto d-inline-block" style="color:#fff;"><a href="<?php echo esc_url(get_page_link(50)) ?>">profile</a></button>
+              <button type="button" class="btn btn-primary mx-auto d-inline-block" style="color:#fff;"><a href="<?php echo esc_url(get_page_link('member-4')) ?>">profile</a></button>
               </div>
           </div>
         </div>
@@ -111,13 +111,13 @@
 
 <section id="box-section">
   <div class="container">
-    <h2 data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">お客さまの声</h2>
+    <h2 class="py-3" data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">お客さまの声</h2>
 
-    <div class="box-lists">
+    <div class="box-lists row-eq-height">
       <div class="row">
         <?php
           $customerVoice = new WP_Query(array(
-            'post_per_page' => 2,
+            'posts_per_page' => 2,
             'post_type' => 'customer_voice'
           ));
           while($customerVoice->have_posts()){
@@ -125,13 +125,13 @@
 
         <div class="col-md-6">
           <div class="row py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in">
-            <div class="col-1 custmor-quote"> <i class="fas fa-quote-left fa-lg color-red"></i>
+            <div class="col-1 pl-2 custmor-quote"> <i class="fas fa-quote-left fa-lg fa-fw color-red"></i>
               <!--					<img src="images/quote.png" alt="">-->
             </div>
             <div class="col-11 customor-voice">
               <dl>
                 <dt><?php the_title(); ?></dt>
-                <dd><?php echo wp_trim_words( get_the_content(), 55, '...' ); ?></dd>
+                <dd><?php echo wp_trim_words( get_the_content(), 35, '...' ); ?></dd>
               </dl>
               <a href="<?php the_permalink(); ?>">
               <p>read more</p>
@@ -145,10 +145,8 @@
             </div>
           </div>
         </div>
-
       <?php }
       ?>
-
       </div>
     </div>
   </div>
@@ -159,7 +157,7 @@
 	  <h2 data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">NEWS</h2>
     <?php
       $news = new WP_Query(array(
-        'post_per_page' => 2,
+        'posts_per_page' => 2,
         'post_type' => 'news'
       ));
       while($news->have_posts()){

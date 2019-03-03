@@ -33,9 +33,10 @@
 -->
 <!--plugin-->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 <?php wp_head(); ?>
 </head>
-<body id="home" <?php body_class(); ?>>
+<body <?php body_class(); ?>>
 <!---->
 <header>
     <div class="row justify-content-start header-top py-2">

@@ -1,88 +1,48 @@
 <?php get_header();?>
 
-<?php if ( have_posts() ):
-while ( have_posts() ) : the_post();
-?>
 
+<section>
 	<div class="container">
-		<div class="row m-2 border-top border-bottom" id="q_and_a">
-		    <h1>Q and A</h1>
+		<div class="row py-2 mx-xs-5 m-2" data-aos-offset="300" data-aos="fade-in" data-aos-duration="1500">
+			<div class="card bg-dark text-black border-light">
+				<img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/bg_img_law01.png" alt="">
+				<div class="card-img-overlay">
+					<h3 class="card-title" data-aos="fade-in" data-aos-delay="400" data-aos-easing="linear" data-aos-duration="800">Q and A</h3>
+				</div>
+			</div>
 		</div>
 		<?php
-			$customerVoice = new WP_Query(array(
+			$QandA = new WP_Query(array(
 				'post_per_page' => 2,
-				'post_type' => 'customer_voice'
+				'post_type' => 'q_and_a'
 			));
-			while($customerVoice->have_posts()){
-				$customerVoice->the_post(); ?>
+			while($QandA->have_posts()){
+				$QandA->the_post(); ?>
 
-
-
-				      <?php }
-				      ?>
-
-							
-<div class="row m-2 border-top border-bottom" id="q_and_a">
-    <h1><?php the_title(); ?></h1>
-</div>
   <div class="row">
-    <div class="col-md-8">
-      <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="col">
+      <div id="accordion" role="tablist" aria-multiselectable="true">
   <div class="card">
     <div class="card-header" role="tab" id="headingOne">
       <h5 class="mb-0">
         <a class="text-body" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
-          質問１
+          <?php the_title(); ?>
         </a>
       </h5>
     </div><!-- /.card-header -->
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
-        解答１
-      </div><!-- /.card-body -->
-    </div><!-- /.collapse -->
-  </div><!-- /.card -->
-  <div class="card">
-    <div class="card-header" role="tab" id="headingTwo">
-      <h5 class="mb-0">
-        <a class="collapsed text-body" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
-          質問１
-        </a>
-      </h5>
-    </div><!-- /.card-header -->
-    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        解答１
-      </div><!-- /.card-body -->
-    </div><!-- /.collapse -->
-  </div><!-- /.card -->
-  <div class="card">
-    <div class="card-header" role="tab" id="headingThree">
-      <h5 class="mb-0">
-        <a class="collapsed text-body" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-          質問１
-        </a>
-      </h5>
-    </div><!-- /.card-header -->
-    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        解答１
+        <?php the_content(); ?>
       </div><!-- /.card-body -->
     </div><!-- /.collapse -->
   </div><!-- /.card -->
 </div><!-- /#accordion -->
     </div>
-    <div class="col-md-4 mt-2">
-      <div class="card card-body border"><br>
-        <p></p>
-
-      </div>
-    </div>
   </div>
+<?php }
+		?>
   <br>
 </div>
-<?php
-			endwhile;
-		endif;
-		?>
+</section>
+
 <?php get_footer();?>

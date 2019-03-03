@@ -7,12 +7,15 @@
     <?php if ( have_posts() ):
   while ( have_posts() ) : the_post();
   ?>
-
+<section>
   <div class="container">
-    <div class="row m-2 border-top border-bottom" >
-      <div class="col-12" data-aos="fade" data-aos-offset="200" data-aos-duration="1000">
-        <p class="h4 py-3">メンバー紹介</p>
-  		<p class="h3 py-1">【<?php the_title(); ?>】</p>
+    <div class="row py-2 mx-xs-5 m-2" data-aos-offset="300" data-aos="fade-in" data-aos-duration="1500">
+      <div class="card bg-light text-black border-light">
+        <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/bg_img_law03.png" alt="">
+        <div class="card-img-overlay">
+          <h2 class="card-title" data-aos="fade-in" data-aos-delay="400" data-aos-easing="linear" data-aos-duration="800">メンバー紹介</h2>
+          <h3 class="card-text" data-aos="fade-in" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="800">【<?php the_title(); ?>】</h3>
+        </div>
       </div>
     </div>
   </div>
@@ -38,7 +41,7 @@
     </div>
     <br>
   </div>
-
+</section>
   <?php
       endwhile;
     endif;

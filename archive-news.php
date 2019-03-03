@@ -3,10 +3,8 @@
 <?php if ( have_posts() ):
   while ( have_posts() ) : the_post();
   ?>
-
+<section>
 	<div class="container pt-10">
-
-
             <div class="col-lg-6">
               <div class="row py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in">
                 <div class="col-1 custmor-quote"> <i class="fas fa-quote-left fa-lg color-red"></i>
@@ -31,6 +29,7 @@
             </div>
 
   </div>
+</section>
   <?php
         endwhile;
       endif;

@@ -3,9 +3,8 @@
 <?php if ( have_posts() ):
   while ( have_posts() ) : the_post();
   ?>
-
+<section>
 	<div class="container">
-    <div class="container">
               <div class="col-lg-6">
                 <div class="row py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in">
                   <div class="col-1 custmor-quote"> <i class="fas fa-quote-left fa-lg color-red"></i>
@@ -26,11 +25,9 @@
                   </div>
                 </div>
               </div>
-    </div>
-
      <a href="<?php echo get_post_type_archive_link('news')?>">一覧へ戻る</a>
   </div>
-
+</section>
   <?php
         endwhile;
       endif;
