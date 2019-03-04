@@ -2,17 +2,17 @@
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="3000">
+    <div class="carousel-item active" data-interval="1000">
       <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_commandview.jpg" alt="第1スライド">
     </div>
-    <div class="carousel-item" data-interval="3000">
+    <div class="carousel-item" data-interval="1000">
       <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_family.jpg" alt="第2スライド">
     </div>
-    <div class="carousel-item" data-interval="3000">
+    <div class="carousel-item" data-interval="1000">
       <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_shakehands.jpg" alt="第3スライド">
     </div>
-	  <div class="carousel-item" data-interval="3000">
-      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_shelf.jpg" alt="第４スライド">
+	  <div class="carousel-item" data-interval="1000">
+      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_meeting.jpg" alt="第４スライド">
     </div>
   </div>
 </div>
@@ -43,8 +43,8 @@
     <h2 class="py-3" data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">事務所メンバー</h2>
     <!--y:2/15 レスポンシブレイアウト-->
 
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
+      <div class="card-deck">
+        <!-- <div class="col-md-6 col-lg-3"> -->
           <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-duration="1000">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_1.png" alt="">
             <div class="team-name-box py-2">
@@ -58,9 +58,9 @@
               <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link('member-1')) ?>">profile</a></button>
               </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
+        <!-- </div> -->
+        <!-- <div class="col-md-6 col-lg-3"> -->
+          <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="100" data-aos-duration="1000">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_2.jpg" alt="">
             <div class="team-name-box py-2">
               <p>山中　XX</p>
@@ -73,9 +73,9 @@
               <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link('member-2')) ?>">profile</a></button>
               </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+        <!-- </div> -->
+        <!-- <div class="col-md-6 col-lg-3"> -->
+          <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_3.png" alt="">
             <div class="team-name-box py-2">
               <p>山中　渉</p>
@@ -88,9 +88,9 @@
               <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="<?php echo esc_url(get_page_link('member-3')) ?>">profile</a></button>
               </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="600" data-aos-duration="1000">
+        <!-- </div>
+        <div class="col-md-6 col-lg-3"> -->
+          <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_4.png" alt="">
             <div class="team-name-box py-2">
               <p>星野　XX</p>
@@ -103,7 +103,7 @@
               <button type="button" class="btn btn-primary mx-auto d-inline-block" style="color:#fff;"><a href="<?php echo esc_url(get_page_link('member-4')) ?>">profile</a></button>
               </div>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
 
   </div>
@@ -124,7 +124,7 @@
             $customerVoice->the_post(); ?>
 
         <div class="col-md-6">
-          <div class="row py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in">
+          <div class="row py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in" data-aos-duration="1000">
             <div class="col-1 pl-2 custmor-quote"> <i class="fas fa-quote-left fa-lg fa-fw color-red"></i>
               <!--					<img src="images/quote.png" alt="">-->
             </div>
@@ -154,7 +154,7 @@
 
 <seciton id="blog-section">
   <div class="container">
-	  <h2 data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">NEWS</h2>
+	  <h2 data-aos="fadeInUp" data-aos-offset="300" data-aos-duration="1000">NEWS</h2>
     <?php
       $news = new WP_Query(array(
         'posts_per_page' => 2,
@@ -163,7 +163,7 @@
       while($news->have_posts()){
         $news->the_post(); ?>
 
-	  <div class="row m-2 slide-left" data-aos-offset="400" data-aos="fade-in">
+	  <div class="row m-2 slide-left" data-aos-offset="400" data-aos="fade-in" data-aos-duration="1000">
 		  <div class="col-2 col-md-1">
 			   <img src="<?php echo get_template_directory_uri(); ?>/images/news.png" class="img-fluid" alt="">
 		  </div>

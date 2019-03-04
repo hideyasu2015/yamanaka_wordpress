@@ -13,25 +13,38 @@
           </div>
         </div>
       </div>
+      </div>
+      <div class="container">
       <div class="row">
-        <div class="col-md-6 p-3">
-          <div class="enjoy-css">Q1. 今回の仕事の内容はどんな問題がありましたか？
+        <div class="enjoy-css shadow" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+          <div class="row justify-content-around">
+        <div class="col-md-4 mx-3 mx-md-1 p-3 bg-light shadow">
+          <p>Q1. 今回の仕事の内容はどんな問題がありましたか？</p>
+        </div>
+        <div class="col-md-7 pt-4 pt-md-2 py-3">
+          A. <?php the_field('q1'); ?>
           </div>
         </div>
-        <div class="col-md-6 p-3">
-          <p><?php the_field('q1'); ?></p>
         </div>
-        <div class="col-md-6 p-3">
+        <div class="enjoy-css shadow" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+          <div class="row justify-content-around">
+        <div class="col-md-4 mx-3 mx-md-1 p-3 bg-light shadow">
           <p>Q2. 山中事務所に頼んで良かったと思った点はなんですか？</p>
         </div>
-        <div class="col-md-6 p-3">
-          <p><?php the_field('q2'); ?></p>
+        <div class="col-md-7 p-2">
+          A. <?php the_field('q2'); ?>
+          </div>
         </div>
-        <div class="col-md-6 p-3">
+        </div>
+        <div class="enjoy-css shadow" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+          <div class="row justify-content-around">
+        <div class="col-md-4 mx-3 mx-md-1 p-3 bg-light shadow">
           <p>Q3. これからもお願いしたいとお思いますか？</p>
         </div>
-        <div class="col-md-6 p-3">
-          <p><?php the_field('q3'); ?></p>
+        <div class="col-md-7 p-2">
+          A. <?php the_field('q3'); ?>
+        </div>
+        </div>
         </div>
       </div>
       <div class="row m-5 p-3">
@@ -47,7 +60,7 @@
           <button type="button" class="btn btn-primary mx-auto d-inline-block" style="color:#fff;">
             <a href="<?php echo get_post_type_archive_link('customer_voice')?>">お客様の声一覧</a></button>
       </div>
-      </div>
+</div>
     </section>
     <?php
   endwhile;
