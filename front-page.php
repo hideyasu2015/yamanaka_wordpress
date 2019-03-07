@@ -2,6 +2,7 @@
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
+
     <div class="carousel-item active" data-interval="3000">
       <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_commandview.jpg" alt="第1スライド">
     </div>
@@ -13,6 +14,8 @@
     </div>
 	  <div class="carousel-item" data-interval="3000">
       <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_shelf.jpg" alt="第４スライド">
+
+
     </div>
   </div>
 </div>
@@ -52,15 +55,19 @@
 
 
 
+
             <div class="card-body">
               <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
                 また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
                </p>
+
               <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="https://yamanaka-office.hideyasu.xyz/member-1/">profile</a></button>
+
               </div>
           </div>
         <!-- </div> -->
         <!-- <div class="col-md-6 col-lg-3"> -->
+
           <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
 	          <div class="card_img">
             	<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_2.jpg" alt="">
@@ -70,11 +77,13 @@
             <div class="card-body">
               <p class="card-text p-3">時代に沿った仕方でちゃんとやっていきたい。司法書士も業務がどんどん増えてきている　けれども、登記の仕事はもちろんエキスパートでないといけないと思うし、これから広がっていく仕事も、外から見たら司法書士って、、
                </p>
+
               <button type="button" class="btn btn-primary mx-auto d-inline-block"><a href="https://yamanaka-office.hideyasu.xyz/member-2/">profile</a></button>
               </div>
           </div>
         <!-- </div> -->
         <!-- <div class="col-md-6 col-lg-3"> -->
+
           <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
 						<div class="card_img">
             	<img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_3.png" alt="">
@@ -88,7 +97,8 @@
           </div>
         <!-- </div>
         <div class="col-md-6 col-lg-3"> -->
-          <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-offset="600" data-aos-duration="1000">
+
+          <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
             <div class="card_img">
 		           <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_4.png" alt="">
 
@@ -186,6 +196,7 @@
     <div class="box-lists row-eq-height">
       <div class="row">
         <?php
+
 $customerVoice = new WP_Query(array(
     'posts_per_page' => 2,
     'post_type' => 'customer_voice',
@@ -200,6 +211,7 @@ while ($customerVoice->have_posts()) {
             </div>
             <div class="col-11 customor-voice">
               <dl>
+
                 <dt><?php the_title();?></dt>
                 <dd><?php echo wp_trim_words(get_the_content(), 35, '...'); ?></dd>
               </dl>
@@ -210,13 +222,16 @@ while ($customerVoice->have_posts()) {
           <div class="row px-3">
             <div class="col-2"> <img src="<?php echo get_template_directory_uri(); ?>/images/human1r.jpg" class="img-fluid" alt=""> </div>
             <div class="col-10">
-              <p><?php the_field('customer_name');?><br>
-                <small><?php the_field('company');?></small> </p>
+
+              <p><?php the_field('customer_name'); ?><br>
+                <small><?php the_field('company'); ?></small> </p>
+
             </div>
           </div>
         </div>
       <?php }
-?>
+      ?>
+
       </div>
     </div>
   </div>
@@ -224,30 +239,34 @@ while ($customerVoice->have_posts()) {
 
 <seciton id="blog-section">
   <div class="container">
-	  <h2 data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">NEWS</h2>
-    <?php
-$news = new WP_Query(array(
-    'posts_per_page' => 2,
-    'post_type' => 'news',
-));
-while ($news->have_posts()) {
-    $news->the_post();?>
 
-	  <div class="row m-2 slide-left" data-aos-offset="400" data-aos="fade-in">
+	  <h2 data-aos="fadeInUp" data-aos-offset="300" data-aos-duration="1000">NEWS</h2>
+    <?php
+      $news = new WP_Query(array(
+        'posts_per_page' => 2,
+        'post_type' => 'news'
+      ));
+      while($news->have_posts()){
+        $news->the_post(); ?>
+
+	  <div class="row m-2 slide-left" data-aos-offset="400" data-aos="fade-in" data-aos-duration="1000">
 		  <div class="col-2 col-md-1">
 			   <img src="<?php echo get_template_directory_uri(); ?>/images/news.png" class="img-fluid" alt="">
 		  </div>
 		  <div class="col-10 col-md-11 ">
-			<time datetime="<?php the_time('Y-m-d');?>"><?php the_time('Y年m月d日(1)');?></time>
-            <p class="news-title"><?php the_title();?></p>
-            <p class="news-desc"><?php echo wp_trim_words(get_the_content(), 20, '...'); ?></p>
-            <a href="<?php the_permalink();?>">
+
+			<time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日(1)'); ?></time>
+            <p class="news-title"><?php the_title(); ?></p>
+            <p class="news-desc"><?php echo wp_trim_words( get_the_content(), 20, '...' ); ?></p>
+            <a href="<?php the_permalink(); ?>">
             <p>read more</p>
             </a>
 		  </div>
 	  </div>
           <?php }
-?>
+
+          ?>
+
 	  </div>
 </seciton>
 

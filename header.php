@@ -61,6 +61,7 @@
         array(
 //           'menu' => 'main',
           'theme_location' => 'menu-1',
+
           'items_wrap' => '<ul id="%1$s" class="%2$s navbar-nav ml-auto">%3$s</ul>',
           'container' => false
         )

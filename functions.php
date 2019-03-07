@@ -1,4 +1,5 @@
 <?php
+
   add_theme_support( 'menus' );
   
   // This theme uses wp_nav_menu() in two locations.
@@ -62,6 +63,7 @@
     $atts['class'] = 'nav-link pl-1';
     return $atts;
 }
+
 
 */
   ?>
