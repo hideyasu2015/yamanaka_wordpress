@@ -149,12 +149,34 @@ header .navbar-brand {
 
 
 
-.card{
+/* TOPのメンバー紹介ページ */
+.card_img{
 	position: relative;
+
+}
+.card_img p{
+	display: block;
+	width:100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px; 
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	bottom: 0%;
+	-webkit-box-shadow: inset 5px -21px 14px 34px rgba(0,0,0,0.68); 
+	box-shadow: inset 5px -21px 14px 34px rgba(0,0,0,0.68);
+}
+
+.card{
+/* 	position: relative; */
+	min-width: 230px !important;
 }
 
 .team-name-box{
-	position: relative;
+	position: absolute;
+	
 	top: 50%;
     left: 50%;
         -webkit-transform: translate(-50%, -50%);
@@ -174,8 +196,20 @@ header .navbar-brand {
     color: #fff !important;
     background-color: #aa0000 !important;
     border-color: #aa0000 !important;
+    position: absolute !important;
+    bottom: 2%;
+    left: 34%;
 }
+/*
 
+.btn-primary {
+    color: #fff !important;
+    background-color: #aa0000 !important;
+    border-color: #aa0000 !important;
+    position: absolute !important;
+}
+ 
+*/
 .btn-primary a{
   color: #fff !important;
   text-decoration: none !important;
@@ -261,6 +295,7 @@ header .navbar-brand {
   background-color: black;
   color: white; }
 
+
 /*グリッドの高さを揃える*/
   .row-height {
       display: flex;
@@ -295,3 +330,4 @@ div .enjoy-css {
 */
 
 /*# sourceMappingURL=style.css.map */
+
