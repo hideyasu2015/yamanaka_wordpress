@@ -3,7 +3,7 @@
   <!--三段に変更-->
   <div class="row footer-top">
     <div class="ml-5">
-      <p> </p>
+      <p></p>
     </div>
   </div>
   <div class="row footer-bottom">
