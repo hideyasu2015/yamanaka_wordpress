@@ -9,14 +9,16 @@ Author: Yoshikawa
 @charset "UTF-8";
 
 body{
-padding-top:5rem;
+  padding-top:5rem;
   box-sizing: border-box;
   font-weight: normal;
 /*	 font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";*/
 	color: #333;
 /*  font-family:"ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";*/
 }
-
+body:not(.home) section {
+    padding-top:5rem;
+}
 
 div, ul, li, h1, h2, h3, h4, h5, p {
 /*  padding: 0;*/
@@ -126,29 +128,51 @@ header .navbar-brand {
 }
 
 
-
+/*front customerVoice*/
 #box-section {
-  height: auto;
-  padding-top: 70px;
-  padding-bottom: 70px; }
-  #box-section .container .box-lists .customor-box {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+  #box-section .container .box-lists .row-eq-height{
+      display: flex;
+      flex-wrap: wrap;
+      }
+   #box-section .container .box-lists .customor-box {
+    /* height: 10rem; */
     border: 1px solid #eeee;
     background-color: #fcfcfc;
-    word-wrap: break-word;
+    word-wrap: break-word; }
+    #box-section .container .box-lists .customor-box .custmor-quote i {
+  		color: #aa0000; }
+
+
+/* TOPのメンバー紹介ページ */
+.card_img{
+	position: relative;
+
 }
-    #box-section .container .box-lists .customor-box .custmor-quote {
-      padding: 0; }
-      #box-section .container .box-lists .customor-box .custmor-quote i {
-/*        width: 20px;*/
-/*        float: right;*/
-		color: #aa0000; }
+.card_img p{
+	display: block;
+	width:100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px; 
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	bottom: 0%;
+	-webkit-box-shadow: inset 5px -21px 14px 34px rgba(0,0,0,0.68); 
+	box-shadow: inset 5px -21px 14px 34px rgba(0,0,0,0.68);
+}
 
 .card{
-	position: relative;
+/* 	position: relative; */
+	min-width: 230px !important;
 }
 
 .team-name-box{
-	position: relative;
+	position: absolute;
+	
 	top: 50%;
     left: 50%;
         -webkit-transform: translate(-50%, -50%);
@@ -168,8 +192,20 @@ header .navbar-brand {
     color: #fff !important;
     background-color: #aa0000 !important;
     border-color: #aa0000 !important;
+    position: absolute !important;
+    bottom: 2%;
+    left: 34%;
 }
+/*
 
+.btn-primary {
+    color: #fff !important;
+    background-color: #aa0000 !important;
+    border-color: #aa0000 !important;
+    position: absolute !important;
+}
+ 
+*/
 .btn-primary a{
   color: #fff !important;
   text-decoration: none !important;
@@ -246,34 +282,19 @@ header .navbar-brand {
     box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5) !important;
 }
 
-
-
-#member, #q_and_a{
-	padding-top: 250px;
-}
-@media (min-width: 767.98px) {
-  #member, #q_and_a{
-	padding-top: 150px;
-}
-}
-
-footer .footer-top {
-  height: 70px;
+.footer-top {
   background-color: #aa0000;
-  line-height: 70px;
   color: white; }
-footer .footer-bottom {
+.footer-bottom {
 /*  padding: 50px 0;*/
   height: auto;
   background-color: black;
   color: white; }
 
-
-/*member*/
-h1 .member{
-	font-size: 1.5rem;
+/* page.php bg img */
+#page_layout .container div{
+  height: 20rem;
 }
- 
 
 /*
 @media screen and (max-width: 687px) {
@@ -282,3 +303,4 @@ h1 .member{
 */
 
 /*# sourceMappingURL=style.css.map */
+
