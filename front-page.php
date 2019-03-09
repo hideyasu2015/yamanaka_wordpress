@@ -2,19 +2,6 @@
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
-<<<<<<< HEAD
-    <div class="carousel-item active" data-interval="1000">
-      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_commandview.jpg" alt="第1スライド">
-    </div>
-    <div class="carousel-item" data-interval="1000">
-      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_family.jpg" alt="第2スライド">
-    </div>
-    <div class="carousel-item" data-interval="1000">
-      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_shakehands.jpg" alt="第3スライド">
-    </div>
-	  <div class="carousel-item" data-interval="1000">
-      <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_meeting.jpg" alt="第４スライド">
-=======
 
     <div class="carousel-item active" data-interval="3000">
       <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/images/top_commandview.jpg" alt="第1スライド">
