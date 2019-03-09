@@ -33,7 +33,13 @@
 -->
 <!--plugin-->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<<<<<<< HEAD
+<!--favicon-->
+<link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-180x180.png">
+=======
 
+>>>>>>> origin/yoshikawa
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -59,11 +65,22 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <?php wp_nav_menu(
         array(
+<<<<<<< HEAD
+          'menu' => 'main',
+          'fallback_cb'    => '__return_false',
+          'items_wrap' => '<ul id="%1$s" class="%2$s navbar-nav ml-auto">%3$s</ul>',
+          'container' => 'false',
+          'container_class' => '',
+          'depth'          => 2,
+          'walker'         => new bootstrap_4_walker_nav_menu()
+
+=======
 //           'menu' => 'main',
           'theme_location' => 'menu-1',
 
           'items_wrap' => '<ul id="%1$s" class="%2$s navbar-nav ml-auto">%3$s</ul>',
           'container' => false
+>>>>>>> origin/yoshikawa
         )
       );
       ?>
@@ -80,10 +97,27 @@
         <li class="nav-item">
           <a class="nav-link pl-1" href="page-profile.php">事務所概要</a>
         </li>
+<<<<<<< HEAD
+        <li class="nav-item dropdown">
+          <a class="nav-link pl-1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">不動産調査</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">メニュー1</a></li>
+            <li><a class="dropdown-item" href="#">メニュー1</a></li>
+            <li><a class="dropdown-item" href="#">メニュー1</a></li>
+          </ul>
+        </li>
+      </ul> -->
+
+      <!-- <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ドロップダウン</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">メニュー1</a> -->
+=======
         <li class="nav-item">
           <a class="nav-link pl-1" href="page-research.php">不動産調査</a>
         </li>
       </ul> -->
+>>>>>>> origin/yoshikawa
     </div>
   </div>
 </nav>
