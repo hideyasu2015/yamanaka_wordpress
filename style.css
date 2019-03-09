@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @charset "UTF-8";
+=======
+>>>>>>> origin/yoshikawa
 /*
 Theme name: office yamanaka
 Theme URI:
@@ -6,6 +9,7 @@ Description: 司法書士/土地家屋調査士/行政書士事務所
 Version: 1.0
 Author: Yoshikawa
 */
+<<<<<<< HEAD
 body {
   padding-top: 5rem;
   box-sizing: border-box;
@@ -31,6 +35,43 @@ a {
     cursor: pointer; }
   a:visited, a:link {
     color: black; }
+=======
+
+@charset "UTF-8";
+
+body{
+  padding-top:5rem;
+  box-sizing: border-box;
+  font-weight: normal;
+/*	 font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";*/
+	color: #333;
+/*  font-family:"ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";*/
+}
+body:not(.home) section {
+    padding-top:5rem;
+}
+
+div, ul, li, h1, h2, h3, h4, h5, p {
+/*  padding: 0;*/
+/*  margin: 0;*/
+	font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+/*
+  font-weight: normal;*/
+/*  font-family: "Sawarabi Gothic", serif; */
+
+}
+
+a:hover {
+  cursor: pointer; }
+
+a:visited {
+  color: black; }
+
+
+a:link {
+  color: black; }
+>>>>>>> origin/yoshikawa
 
 li {
   list-style: none; }
@@ -41,14 +82,22 @@ li {
 .clear {
   clear: both; }
 
+<<<<<<< HEAD
 header {
   width: 100%;
   height: auto;
+=======
+
+header {
+  width: 100%;
+	height:auto;
+>>>>>>> origin/yoshikawa
   position: fixed;
   top: 0;
   z-index: 100;
   background-color: white; }
   header .header-top {
+<<<<<<< HEAD
     background-color: black; }
   header p {
     height: auto;
@@ -101,20 +150,102 @@ header {
 #message-section p {
   font-size: 2vw;
   letter-spacing: 0.07em; }
+=======
+    background-color: black;
+	}
+
+
+header p img{
+    width: 15px;
+	margin-right: 4px;
+}
+
+header p {
+	height: auto;
+	color: white;
+	font-size: 12px;
+	white-space:pre;
+	display: table-cell;
+	vertical-align: middle;
+	line-height:normal;
+}
+
+header .navbar-brand {
+  width: 15vw;
+  height: auto;
+}
+
+.navbar {
+  box-shadow: 0px 2px 4px #aaa;
+}
+
+.navbar-nav ul {
+	font-size: 0;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 4px;
+	list-style: none;
+	text-align: center;
+}
+.navbar-nav li {
+	margin: 0 8px;
+	display: inline-block;
+}
+.navbar-nav li a {
+	text-decoration: none;
+	padding-bottom: 3px; /* 文字と下線に隙間を作る */
+	color: #aa0000;
+	display: block;
+}
+.navbar-nav li a:after {
+	content: '';
+	width: 0;
+	transition: all 0.3s ease;
+	border-bottom: 3px solid #aa0000;
+	display: block;
+}
+.navbar-nav li a:hover:after {
+	width: 100%;
+	border-bottom: 3px solid #aa0000;
+}
+
+
+
+
+#message-section h2{
+	font-size: 3.5vw;
+	letter-spacing:0.07em;
+}
+
+#message-section p{
+	font-size: 2vw;
+	letter-spacing:0.07em;
+}
+
+>>>>>>> origin/yoshikawa
 
 /*front customerVoice*/
 #box-section {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
+<<<<<<< HEAD
   #box-section .container .box-lists .row-eq-height {
     display: flex;
     flex-wrap: wrap; }
   #box-section .container .box-lists .customor-box {
+=======
+  #box-section .container .box-lists .row-eq-height{
+      display: flex;
+      flex-wrap: wrap;
+      }
+   #box-section .container .box-lists .customor-box {
+>>>>>>> origin/yoshikawa
     /* height: 10rem; */
     border: 1px solid #eeee;
     background-color: #fcfcfc;
     word-wrap: break-word; }
     #box-section .container .box-lists .customor-box .custmor-quote i {
+<<<<<<< HEAD
       color: #aa0000; }
 
 .card {
@@ -202,23 +333,180 @@ a .profile-button {
     background-color: #fff;
     border-color: #aa0000;
     color: #aa0000; }
+=======
+  		color: #aa0000; }
+
+
+
+/* TOPのメンバー紹介ページ */
+.card_img{
+	position: relative;
+
+}
+.card_img p{
+	display: block;
+	width:100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px; 
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	bottom: 0%;
+	-webkit-box-shadow: inset 5px -21px 14px 34px rgba(0,0,0,0.68); 
+	box-shadow: inset 5px -21px 14px 34px rgba(0,0,0,0.68);
+}
+
+.card{
+/* 	position: relative; */
+	min-width: 230px !important;
+}
+
+.team-name-box{
+	position: absolute;
+	
+	top: 50%;
+    left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 80%;
+        border: 0.5px solid #eee;
+        text-align: center;
+        background-color: white;
+}
+
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #aa0000 !important;
+    border-color: #aa0000 !important;
+    position: absolute !important;
+    bottom: 2%;
+    left: 34%;
+}
+/*
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #aa0000 !important;
+    border-color: #aa0000 !important;
+    position: absolute !important;
+}
+ 
+*/
+.btn-primary a{
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color:#790101 !important;
+    border-color: #790101 !important;
+    text-decoration: none;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 .2rem #790101 !important;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff !important;
+    background-color: #aa0000 !important;
+    border-color: #aa0000 !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #fff !important;
+    background-color: #790101 !important;
+    border-color: #790101 !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5) !important;
+}
+
+.btn-outline-primary {
+    color: #fff !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: #790101 !important;
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: #790101 !important;
+    border-color: #790101 !important;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5) !important;
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #fff !important;
+    background-color: #790101 !important;
+    border-color: #790101 !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5) !important;
+}
+>>>>>>> origin/yoshikawa
 
 .footer-top {
   background-color: #aa0000;
   color: white; }
+<<<<<<< HEAD
 
 .footer-bottom {
   /*  padding: 50px 0;*/
+=======
+.footer-bottom {
+/*  padding: 50px 0;*/
+>>>>>>> origin/yoshikawa
   height: auto;
   background-color: black;
   color: white; }
 
+<<<<<<< HEAD
 /*グリッドの高さを揃える*/
 .row-height {
   display: flex;
   flex-wrap: wrap; }
 
 /*お客さまの声詳細ページ*/
+=======
+
+/*グリッドの高さを揃える*/
+  .row-height {
+      display: flex;
+      flex-wrap: wrap
+    }
+
+>>>>>>> origin/yoshikawa
 div .enjoy-css {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -227,6 +515,7 @@ div .enjoy-css {
   width: 100%;
   height: auto;
   position: relative;
+<<<<<<< HEAD
   padding: 1em;
   margin: 2em;
   border: 1.5px solid #aa0000;
@@ -443,13 +732,33 @@ table, td, th {
 
 .article3 td {
   background-color: #fff; }
+=======
+  padding: 1em ;
+  margin:2em;
+  border: 1.5px solid #aa0000;
+  color: rgba(89,89,89,1);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.3) ;
+}
+
+
+>>>>>>> origin/yoshikawa
 
 /*
 @media screen and (max-width: 687px) {
   header .container .header-right {
     display: none; } }
 */
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
+=======
+
+/*# sourceMappingURL=style.css.map */
+
+>>>>>>> origin/yoshikawa
