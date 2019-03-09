@@ -12,93 +12,46 @@
 			</div>
 		</div>
 		<div id="job_list">
-			<div class="row">
-				<div class="col-4">
+			<div class="row details">
+				<div class="col-4 type1">
 					<a href="<?php the_permalink(); ?>">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/box-image1.jpg" class="img-fluid">
-					</a>
-						<dl>
-						<dt></dt>
-						<dd>どのような手続きを行う場合にもまず必要となる基本的な調査です。
-						</dl>
-							<p>公図・地積測量図・登記の経緯等の登記情報調査</p>
-
-						</div>
-						<div class="col-4">
-							<a href="<?php the_permalink(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/box-image2.jpg" class="img-fluid">
-							</a>
-							<dl>
-								<dt></dt>
-								<dd>登記情報を、書類・図面上で調査した後、現地の土地・建物を調査します。</dd>
-							</dl>
-							<p>登記情報調査に基づく現地調査</p>
-						</div>
-						<div class="col-4">
-							<a href="<?php the_permalink(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/box-image4.jpg" class="img-fluid">
-							</a>
-							<dl>
-								<dt></dt>
-								<dd>境界の調査と法律的な判断とそれに基づく測量は土地家屋調査士が専門とし、たんに測量技術職ではなく所謂、隣接法律専門職である一つの大きな理由となっている分野です。</dd>
-							</dd>
-						</dl>
-						<p>境界の鑑定調査・測量</p>
-					</div>
-					<div class="col-4">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/box-image1.jpg" class="img-fluid">
+					</a>
+					<dl>
+						<dt></dt>
+						<dd>どのような手続きを行う場合にもまず必要となる基本的な調査です。</dd>
+					</dl>
+						<p>公図・地積測量図・登記の経緯等の登記情報調査</p>
+					</div>
+					<div class="col-4 type1">
+						<a href="<?php the_permalink(); ?>">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/box-image2.jpg" class="img-fluid">
+						</a>
 						<dl>
 							<dt></dt>
-							<dd>どのような手続きを行う場合にもまず必要となる基本的な調査です。	</dl>
-								<p>公図・地積測量図・登記の経緯等の登記情報調査</p>
-							</div>
-							<div class="col-4">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/box-image2.jpg" class="img-fluid">
-								<dl>
-									<dt></dt>
-									<dd>登記情報を、書類・図面上で調査した後、現地の土地・建物を調査します。</dd>
-								</dl>
-								<p>登記情報調査に基づく現地調査</p>
-							</div>
-							<div class="col-4">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/box-image4.jpg" class="img-fluid">
-								<dl>
-									<dt></dt>
-									<dd>境界の調査と法律的な判断とそれに基づく測量は土地家屋調査士が専門とし、たんに測量技術職ではなく所謂、隣接法律専門職である一つの大きな理由となっている分野です。</dd>
-								</dd>
-							</dl>
-							<p>境界の鑑定調査・測量</p>
-						</div>
-						<div class="col-4">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/box-image1.jpg" class="img-fluid">
-							<dl>
-								<dt></dt>
-								<dd>どのような手続きを行う場合にもまず必要となる基本的な調査です。	</dl>
-									<p>公図・地積測量図・登記の経緯等の登記情報調査</p>
-								</div>
-								<div class="col-4">
-									<img src="<?php echo get_template_directory_uri(); ?>/images/box-image2.jpg" class="img-fluid">
-									<dl>
-										<dt></dt>
-										<dd>登記情報を、書類・図面上で調査した後、現地の土地・建物を調査します。</dd>
-									</dl>
-									<p>登記情報調査に基づく現地調査</p>
-								</div>
-								<div class="col-4">
-									<img src="<?php echo get_template_directory_uri(); ?>/images/box-image4.jpg" class="img-fluid">
-									<dl>
-										<dt></dt>
-										<dd>境界の調査と法律的な判断とそれに基づく測量は土地家屋調査士が専門とし、たんに測量技術職ではなく所謂、隣接法律専門職である一つの大きな理由となっている分野です。</dd>
-									</dd>
-								</dl>
-								<p>境界の鑑定調査・測量</p>
-							</div>
-						</div>
+							<dd>登記情報を、書類・図面上で調査した後、現地の土地・建物を調査します。</dd>
+						</dl>
+						<p>登記情報調査に基づく現地調査</p>
 					</div>
-
-
-					<br>
+					<div class="col-4 type1">
+						<a href="<?php the_permalink(); ?>">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/box-image4.jpg" class="img-fluid">
+						</a>
+						<dl>
+							<dt></dt>
+							<dd>境界の調査と法律的な判断とそれに基づく測量は土地家屋調査士が専門とし、たんに測量技術職ではなく所謂、隣接法律専門職である一つの大きな理由となっている分野です。</dd>
+						</dd>
+					</dl>
+					<p>境界の鑑定調査・測量</p>
 				</div>
-			</section>
 
-			<?php get_footer();?>
+
+			</div>
+		</div>
+
+
+		<br>
+	</div>
+</section>
+
+<?php get_footer();?>

@@ -12,7 +12,9 @@
     </div>
     <div class="col-md-4 p-4">
       <div class="text-center pb-2" id="facebook"><i class="fab fa-facebook-f fa-fw fb-iconcolor"></i>facebook</div>
-			<div class="fb-page" data-href="https://www.facebook.com/OfficeYamanaka/" data-height="250" data-tabs="timeline" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/OfficeYamanaka/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OfficeYamanaka/">Office Yamanaka　土地家屋調査士・司法書士・行政書士・測量士</a></blockquote></div>
+			<div class="fb-page" data-href="https://www.facebook.com/OfficeYamanaka/" data-height="250" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/OfficeYamanaka/" class="fb-xfbml-parse-ignore">
+				<a href="https://www.facebook.com/OfficeYamanaka/">Office Yamanaka　土地家屋調査士・司法書士・行政書士・測量士</a></blockquote>
+			</div>
 		</div>
     <div class="col-md-4 p-4">
       <div class="text-center pb-2"><i class="fab fa-google fa-fw ggl-iconcolor"></i>googlemap</div>

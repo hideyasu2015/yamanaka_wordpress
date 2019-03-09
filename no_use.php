@@ -21,8 +21,9 @@
 				$QandA->the_post(); ?>
 
   <div class="row">
-      <?php the_title(); ?>
-
+		<div class="q-and-a-select">
+      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			</div>
   </div>
 
 <?php }

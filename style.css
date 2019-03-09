@@ -13,9 +13,8 @@ body {
   /*	 font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";*/
   color: #333;
   /*  font-family:"ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";*/ }
-
-body:not(.home) section {
-  padding-top: 5rem; }
+  body:not(.home) section {
+    padding-top: 5rem; }
 
 div, ul, li, h1, h2, h3, h4, h5, p {
   /*  padding: 0;*/
@@ -92,11 +91,13 @@ header {
     .navbar-nav li a:hover:after {
       width: 100%;
       border-bottom: 3px solid #aa0000; }
+    .navbar-nav li a .dropdown-menu .dropdown-item:active {
+      background-color: #aa0000;
+      color: #fff; }
 
 #message-section h2 {
   font-size: 3.5vw;
   letter-spacing: 0.07em; }
-
 #message-section p {
   font-size: 2vw;
   letter-spacing: 0.07em; }
@@ -105,19 +106,16 @@ header {
 #box-section {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
-
-#box-section .container .box-lists .row-eq-height {
-  display: flex;
-  flex-wrap: wrap; }
-
-#box-section .container .box-lists .customor-box {
-  /* height: 10rem; */
-  border: 1px solid #eeee;
-  background-color: #fcfcfc;
-  word-wrap: break-word; }
-
-#box-section .container .box-lists .customor-box .custmor-quote i {
-  color: #aa0000; }
+  #box-section .container .box-lists .row-eq-height {
+    display: flex;
+    flex-wrap: wrap; }
+  #box-section .container .box-lists .customor-box {
+    /* height: 10rem; */
+    border: 1px solid #eeee;
+    background-color: #fcfcfc;
+    word-wrap: break-word; }
+    #box-section .container .box-lists .customor-box .custmor-quote i {
+      color: #aa0000; }
 
 .card {
   position: relative; }
@@ -238,51 +236,61 @@ div .enjoy-css {
   text-overflow: ellipsis;
   -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3); }
-
-/*Q and A詳細ページ*/
 div ul#tab_headline {
   margin: 10px 0px 0 0;
   padding: 0; }
   div ul#tab_headline li {
-    display: inline-block;
+    border-bottom: 1px solid #aa0000;
+    display: block;
     width: 100%;
-    height: 30px;
-    line-height: 30px;
-    margin: 0;
-    background-color: #AAA;
+    height: auto;
+    line-height: auto;
+    margin: 1rem;
+    background-color: #fff;
     text-align: center;
     cursor: pointer; }
     div ul#tab_headline li.current {
-      background-color: #FFF; }
+      background-color: #fff; }
 div ul#tab_content {
   margin: 10px 0 0 0px;
   padding: 0; }
   div ul#tab_content li {
     display: none;
     vertical-align: top;
-    height: 150px;
+    height: auto;
     background-color: #FFF;
     padding: 5%;
     z-index: 2; }
     div ul#tab_content li.current {
       display: block; }
 
+/*Q and A詳細ページ*/
+.q-and-a-select {
+  padding: 0.1em 0.3em;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #aa0000 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .5s;
+  color: #aa0000; }
+  .q-and-a-select:hover {
+    background-position: -100% 0;
+    color: #fff; }
+  .q-and-a-select a:hover {
+    color: #fff;
+    text-decoration: none; }
+  .q-and-a-select a:visited {
+    background-color: #aa0000; }
+
 /*業務内容アーカイブページ*/
 .details {
-  display: flex;
   justify-content: space-around;
   list-style: none;
-  width: 640px;
+  width: 100%;
   margin: 1em auto;
   padding: 0;
   text-align: center; }
-  .details li {
-    width: 200px;
-    height: 180px;
+  .details div {
     position: relative; }
-    .details li dl {
-      width: 200px;
-      height: 180px; }
   .details dl {
     box-sizing: border-box !important;
     position: absolute;
@@ -312,12 +320,136 @@ div ul#tab_content {
       opacity: 0;
       transform: translateY(100%); }
 
-/* :::::: type1 :::::: */
+/*業務内容シングルページ*/
+.job-content-select {
+  padding: 0.1em 0.3em;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #aa0000 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .5s;
+  color: #aa0000; }
+  .job-content-select:hover {
+    background-position: -100% 0;
+    color: #fff; }
+  .job-content-select a:hover {
+    color: #fff;
+    text-decoration: none; }
+  .job-content-select a:visited {
+    background-color: #aa0000; }
+
+.hidden_box {
+  margin: 2em 0;
+  /*前後の余白*/
+  padding: 0; }
+
+/*ボタン装飾*/
+.hidden_box label {
+  padding: 15px;
+  font-weight: bold;
+  border: solid 2px #aa0000;
+  cursor: pointer; }
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+  background: #aa0000;
+  color: #fff; }
+
+/*チェックは見えなくする*/
+.hidden_box input {
+  display: none; }
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s; }
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1; }
+
+/* about us ページ */
+.first, .article2 {
+  height: 100vh;
+  background-image: url("images/img_house.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.for-bgimage {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100vh; }
+
+.first h3, .first p {
+  text-align: center;
+  padding-top: 10vh;
+  color: #aa0000;
+  text-shadow: 0 0 10px #fff; }
+
+.article2 h4 {
+  text-align: center;
+  padding-top: 10vh;
+  color: #aa0000;
+  text-shadow: 0 0 10px #fff; }
+.article2 ul {
+  text-align: center; }
+.article2 a {
+  text-align: center;
+  text-decoration: none; }
+  .article2 a:hover {
+    color: #aa0000; }
+
+@media screen and (max-width: 768px) {
+  .first, .article2 {
+    background-image: none; }
+
+  .first::before, .article2::before {
+    content: "";
+    display: block;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("images/img_house.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; } }
+.article1 {
+  height: 100vh;
+  background-color: #aa0000; }
+  .article1 h4 {
+    text-align: center;
+    padding-top: 10vh;
+    color: #2d2d2d; }
+
+.article3 {
+  height: 100vh;
+  background-color: #aa0000; }
+  .article3 h4 {
+    text-align: center;
+    padding-top: 10vh;
+    color: #2d2d2d; }
+
+/*about usページ*/
+table, td, th {
+  border: 2px #ff0000 solid; }
+
+.article3 td {
+  background-color: #fff; }
+
 /*
 @media screen and (max-width: 687px) {
   header .container .header-right {
     display: none; } }
 */
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

@@ -13,8 +13,9 @@
     </div>
 
     <div class="row">
-      <div class="col-3">
+      <div class="col-md-3">
         <ul id="tab_headline">
+
           <?php
           $QandA = new WP_Query(array(
             'post_per_page' => -1,
@@ -24,15 +25,16 @@
           while($QandA->have_posts()){
             $QandA->the_post(); ?>
             <?php if ($QandA->current_post == 0) :?>
-              <li class="current"><a href="javascript:void(0)"><?php the_title(); ?></a></li>
+              <li class="current q-and-a-select"><a href="javascript:void(0)"><?php the_title(); ?></a></li>
             <?php  else :?>
-              <li><a href="javascript:void(0)"><?php the_title(); ?></a></li>
+              <li class="q-and-a-select"><a href="javascript:void(0)"><?php the_title(); ?></a></li>
             <?php endif; ?>
           <?php }
           ?>
+
         </ul>
       </div>
-      <div class="col-9">
+      <div class="col-md-9">
         <ul id="tab_content">
           <?php
           $QandA = new WP_Query(array(
@@ -43,9 +45,17 @@
           while($QandA->have_posts()){
             $QandA->the_post(); ?>
             <?php if ($QandA->current_post == 0) :?>
-              <li class="current"><?php the_content(); ?></li>
+              <li class="current">
+                <h4><?php the_title(); ?></h4>
+                <br>
+                <hr>
+                <?php the_content(); ?></li>
             <?php  else :?>
-              <li><?php the_content(); ?></li>
+              <li>
+                <h4><?php the_title(); ?></h4>
+                <br>
+                <hr>
+                <?php the_content(); ?></li>
             <?php endif; ?>
           <?php }
           ?>
