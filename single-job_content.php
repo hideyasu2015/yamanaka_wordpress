@@ -15,7 +15,7 @@
       </div>
       <div class="col-8">
         <div class="hidden_box">
-        <label for="label1"><h3>OfficeYamanakaで出来ること</h3></label>
+        <label for="label1"><h3>OfficeYamanakaで出来ること<i class="fas fa-angle-down fa-fw"></i></h3></label>
         <input type="checkbox" id="label1"/>
         <div class="hidden_show">
         <p>土地家屋調査士、行政書士の業務は一般の方にとってはあまり馴染みがないかもしれません。</p>
@@ -64,9 +64,9 @@ Office Yamanakaでは、依頼人様そして隣地所有者様等に納得し�
       <div class="row">
         <div class="col-md-3">
           <ul id="tab_headline">
-            <li class="current job-content-select"><a href="javascript:void(0)">公図・地積測量図・登記の経緯等の登記情報調査</a></li>
-            <li class="job-content-select"><a href="javascript:void(0)">登記情報調査に基づく現地調査</a></li>
-            <li class="job-content-select"><a href="javascript:void(0)">境界の鑑定調査・測量</a></li>
+            <li class="current job-content-select"><a href="javascript:void(0)"><i class="fas fa-chevron-circle-right fa-fw"></i>公図・地積測量図・登記の経緯等の登記情報調査</a></li>
+            <li class="job-content-select"><a href="javascript:void(0)"><i class="fas fa-chevron-circle-right fa-fw"></i>登記情報調査に基づく現地調査</a></li>
+            <li class="job-content-select"><a href="javascript:void(0)"><i class="fas fa-chevron-circle-right fa-fw"></i>境界の鑑定調査・測量</a></li>
           </ul>
         </div>
         <div class="col-md-9">
