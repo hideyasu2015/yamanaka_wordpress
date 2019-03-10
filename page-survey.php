@@ -20,11 +20,7 @@ get_header();?>
   </div>
 </div>
 
-<<<<<<< HEAD
 <div class="row">
-=======
-<div row>
->>>>>>> origin/yoshikawa
 
 </div>
 </section>

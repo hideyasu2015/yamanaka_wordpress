@@ -3,7 +3,6 @@
 <?php if ( have_posts() ):
   while ( have_posts() ) : the_post();
   ?>
-<<<<<<< HEAD
   <section>
     <div class="container">
       <div class="row py-2 mx-xs-5 m-2" data-aos-offset="300" data-aos="fade-in" data-aos-duration="1500">
@@ -14,13 +13,15 @@
           </div>
         </div>
       </div>
-      <div class="col-8">
+      <!-- <div class="col-8"> -->
         <div class="hidden_box">
         <label for="label1"><h3>OfficeYamanakaで出来ること<i class="fas fa-angle-down fa-fw"></i></h3></label>
         <input type="checkbox" id="label1"/>
         <div class="hidden_show">
         <p>土地家屋調査士、行政書士の業務は一般の方にとってはあまり馴染みがないかもしれません。</p>
+        <br>
       <h4>土地家屋調査士は境界の専門家であり、土地・建物の測量登記を行います</h4>
+      <hr>
       <p>不動産は法務省の地方事務機関である法務局に登記されることにより、取引の安全性や権利が保全されています。
 不動産登記記録（登記簿）はの３つの部分に分けて、権利を明確化し取引に必要となる重要な事項を記載します。</p>
 <table>
@@ -41,12 +42,17 @@
     </tr>
   </tbody>
 </table>
+<br>
 <p>表題部の登記の特徴は現地を目で見て調査することによる判断を基本とし、（例外もありますが多くの場合）測量、図面の作成を要することです。<br>
 <br>
 土地家屋調査士は、専門的な知識と技術で不動産の客体としての側面の登記である表題部登記のお手伝いをさせて頂いています。</p>
+<br>
 <h4>行政書士は官公署や行政機関への許認可申請の専門家です</h4>
+<hr>
 <p>また、Office Yamanakaでは行政書士業務を行っているため、農地転用や相続等が関係する場面などでさらに幅広く、スムーズで信頼性の高い業務を行うことができます。</p>
+<br>
 <h4>具体的な業務内容</h4>
+<hr>
 <p>Office Yamanakaでは、様々な場面で必要な土地に関する登記申請や許認可手続きを行なっております。<br>
 <br>
 土地の現況に関する調査や各種手続きはそれぞれに専門性が高く、必ずしも単一の手続きでお客様のニーズや問題を解決して行けるとは限りません。<br>
@@ -57,7 +63,7 @@ Office Yamanakaでは、依頼人様そして隣地所有者様等に納得し�
 それらに一つ一つ答えられてこその専門家だと考えております。<br>
 </div>
 </div>
-</div>
+<!-- </div> -->
 </div>
 
 
@@ -235,36 +241,3 @@ Office Yamanakaでは、依頼人様そして隣地所有者様等に納得し�
         ?>
 
         <?php get_footer();?>
-=======
-<section>
-	<div class="container">
-              <div class="col-lg-6">
-                <div class="row py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in">
-                  <div class="col-1 custmor-quote"> <i class="fas fa-quote-left fa-lg color-red"></i>
-
-                  </div>
-                  <div class="col-11 ">
-                    <dl>
-                      <dt><?php the_title(); ?></dt>
-                      <dd><?php the_content(); ?></dd>
-                    </dl>
-                  </div>
-                </div>
-                <div class="row px-3">
-                  <div class="col-2"> <img src="<?php echo get_template_directory_uri(); ?>/images/human1r.jpg" class="img-fluid" alt=""> </div>
-                  <div class="col-10">
-                    <p>Aiu Eo<br>
-                      <small>company name</small> </p>
-                  </div>
-                </div>
-              </div>
-     <a href="<?php echo get_post_type_archive_link('job_content')?>">一覧へ戻る</a>
-  </div>
-</section>
-  <?php
-        endwhile;
-      endif;
-      ?>
-
-  <?php get_footer();?>
->>>>>>> origin/yoshikawa
