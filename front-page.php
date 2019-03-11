@@ -48,7 +48,7 @@
       <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-duration="1000">
         <div class="card_img">
           <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_1.png" alt="">
-          <p class="mx-auto">&nbsp;&nbsp;山中  匠<br />土地家屋調査士</p>
+          <p class="mx-auto">山中  匠<br />&nbsp;土地家屋調査士</p>
         </div>
         <div class="card-body">
           <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
@@ -82,7 +82,7 @@
             <p>山中　渉<br />&nbsp;補助者</p>
           </div>
           <div class="card-body">
-            <p class="card-text p-3 pb-5"> A：そうですね、調査士２人いればやれることも増えるかなということもあるし、測量、土地の仕事をしているからには資格を取ってきちんとできればなということもあります。資格が無いのに無責任なことを言うわけにもいかないですし、、
+            <p class="card-text p-3 pb-5"> 自分が今できることは機械を使って測ることがメインだと思うので、そしてそこから図面を描くことなので、そこはきっちり正確にできるようにとは思ってやっています。測量学もどんどん進歩していっているし。計算や測量法なんかも、、
             </p>
           </div>
           <div class="card-footer">
@@ -94,7 +94,7 @@
         <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
           <div class="card_img">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_4.png" alt="">
-            <p>星野  XX<br />司法書士</p>
+            <p>星野  木綿希<br />&nbsp;司法書士</p>
           </div>
           <div class="card-body">
             <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
