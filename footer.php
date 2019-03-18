@@ -10,8 +10,7 @@
     <div class="offset-2 col-8 offset-md-0 col-md-4 p-4">
       <img src="<?php echo get_template_directory_uri(); ?>/images/logo_white.png" class="img-fluid" alt="">
     </div>
-
-    <div class="offset-1 col-10 offset-md-0 col-md-4 p-4">
+		<div class="offset-1 col-10 offset-md-0 col-md-4 p-4">
       <div class="pb-2" id="facebook"><i class="fab fa-facebook-f fa-fw fb-iconcolor"></i>facebook</div>
 			<div class="fb-page" data-href="https://www.facebook.com/OfficeYamanaka/" data-height="250" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/OfficeYamanaka/" class="fb-xfbml-parse-ignore">
 				<a href="https://www.facebook.com/OfficeYamanaka/">Office Yamanaka　土地家屋調査士・司法書士・行政書士・測量士</a></blockquote>
@@ -40,6 +39,17 @@
 	<div id="fb-root"></div>
 	 <!--fbの埋め込みプラグイン-->
 	<script async defer src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.2"></script>
-  <?php wp_footer(); ?>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
+	<script>
+	jQuery(document).ready(function(){
+	jQuery('.slick').slick({
+	 arrows: true,
+	 autoplay: true,
+	 slidesToShow:2,
+	 appendArrows: $('.arrows'),
+	 });
+ });
+</script>
+<?php wp_footer(); ?>
 </body>
 </html>
