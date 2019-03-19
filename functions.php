@@ -17,8 +17,7 @@
 //     $atts['class'] = 'nav-link pl-1';
 //     return $atts;
 // }
-  ?>
-  <?php
+
   /*
   Bootstrap 4.0.0-alpha2 nav walker extension class
   =================================================
