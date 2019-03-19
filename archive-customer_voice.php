@@ -16,16 +16,16 @@
         ?>
         <hr>
         <div class="row">
-          <div class="col-4">
-            <div class="row">
-            <div class="col-5"> <img src="<?php echo get_template_directory_uri(); ?>/images/human1r.jpg" class="img-fluid" alt=""> </div>
+          <div class="col-md-4">
+          <div class="row">
+            <div class="col-5"> <img src="<?php the_field(icon_img); ?>" class="img-fluid" alt=""> </div>
             <div class="col-7">
               <p><?php the_field('customer_name'); ?><br>
                 <small><?php the_field('company'); ?></small> </p>
               </div>
           </div>
           </div>
-        <div class="col-8 py-2 customor-box" data-aos-delay="300" data-aos="fade-in" data-aos-duration="1500">
+        <div class="col-md-8 py-2 customor-box" data-aos-delay="300" data-aos="fade-in" data-aos-duration="1500">
           <div class="row">
           <div class="col-1 custmor-quote"><i class="fas fa-quote-left fa-lg"></i>
           </div>
@@ -35,7 +35,7 @@
               <dd><?php echo wp_trim_words( get_the_content(), 55, '...' ); ?></dd>
             </dl>
             <a href="<?php the_permalink(); ?>">
-              <button class="customer-button mx-auto d-inline-block">read more</button>
+              <button class="customer-button col-md-4 m-3 mx-auto d-inline-block">read more</button>
             </a>
           </div>
           </div>
