@@ -25,10 +25,26 @@ a {
   color: black;
   text-decoration: none; }
 
-.facebook-icon {
+/*各ページヘッダー画像*/
+.card-img-overlay {
+  padding-top: 1.25rem; }
+  .card-img-overlay .card-title {
+    margin-bottom: .75rem;
+    display: block;
+    padding: .5rem;
+    font-size: 1.2em;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    bottom: 0%;
+    background-color: rgba(255, 255, 255, 0.5); }
+
+/*facebookボタン*/
+.fb-iconcolor {
   size: 32px;
   color: #3b5998; }
 
+/*top page header*/
 header {
   width: 100%;
   height: auto;
@@ -37,18 +53,9 @@ header {
   z-index: 100;
   background-color: #fff; }
   header .header-top {
-    background-color: black; }
-  header p {
-    height: auto;
-    color: #fff;
-    font-size: 12px;
-    white-space: pre;
-    display: table-cell;
-    vertical-align: middle;
-    line-height: normal; }
-    header p img {
-      width: 15px;
-      margin-right: 4px; }
+    background-color: black;
+    height: 3vh;
+    width: 100%; }
   header .navbar-brand {
     width: 15vw;
     height: auto; }
@@ -86,6 +93,7 @@ header {
   .navbar-nav li .whitespace {
     display: block; }
 
+/*front page message*/
 #message-section h2 {
   font-size: 3.5vw;
   letter-spacing: 0.07em; }
@@ -93,7 +101,93 @@ header {
   font-size: 2vw;
   letter-spacing: 0.07em; }
 
-/*front customerVoice*/
+/* TOPのメンバー紹介ページ */
+.card_img {
+  position: relative; }
+  .card_img p {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    bottom: 0%;
+    -webkit-box-shadow: inset 5px -21px 14px 34px rgba(0, 0, 0, 0.68);
+    box-shadow: inset 5px -21px 14px 34px rgba(0, 0, 0, 0.68); }
+
+.card {
+  min-width: 230px !important; }
+
+.team-name-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 80%;
+  border: 0.5px solid #eee;
+  text-align: center;
+  background-color: #fff; }
+
+.card-footer {
+  margin: 1.25rem;
+  padding: 0px;
+  border-top: none;
+  background-color: white; }
+
+/* 	プロフィールのボタン */
+a .profile-button {
+  height: 54px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 54px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #aa0000;
+  border: 2px solid #aa0000;
+  color: #fff;
+  line-height: 50px;
+  display: block;
+  width: 100%; }
+  a .profile-button::before, a .profile-button::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: ''; }
+  a .profile-button::before, a .profile-button::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+  a .profile-button:hover {
+    background-color: #fff;
+    border-color: #aa0000;
+    color: #aa0000; }
+
+/*グリッドの高さを揃える*/
+.row-height {
+  display: flex;
+  flex-wrap: wrap; }
+
+/*プロフィール個別ページ*/
+.member_line {
+  background-color: #aa0000;
+  padding: .5em;
+  color: #fff; }
+
+/*front お客様の声*/
 #box-section {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
@@ -109,7 +203,7 @@ header {
   #box-section .customor-box i {
     color: #aa0000; }
 
-/*スライドの矢印*/
+/*お客様の声スライドの矢印*/
 .arrows {
   position: relative;
   text-align: center; }
@@ -182,82 +276,7 @@ header {
     border-color: #aa0000;
     color: #aa0000; }
 
-/* TOPのメンバー紹介ページ */
-.card_img {
-  position: relative; }
-  .card_img p {
-    display: block;
-    width: 100%;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    position: absolute;
-    color: #fff;
-    font-weight: bold;
-    bottom: 0%;
-    -webkit-box-shadow: inset 5px -21px 14px 34px rgba(0, 0, 0, 0.68);
-    box-shadow: inset 5px -21px 14px 34px rgba(0, 0, 0, 0.68); }
-
-.card {
-  /* 	position: relative; */
-  min-width: 230px !important; }
-
-.team-name-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: auto;
-  width: 80%;
-  border: 0.5px solid #eee;
-  text-align: center;
-  background-color: #fff; }
-
-.card-footer {
-  margin: 1.25rem;
-  padding: 0px;
-  border-top: none;
-  background-color: white; }
-
-/* 	プロフィールのボタン */
-a .profile-button {
-  height: 54px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 54px;
-  outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  background-color: #aa0000;
-  border: 2px solid #aa0000;
-  color: #fff;
-  line-height: 50px;
-  display: block;
-  width: 100%; }
-  a .profile-button::before, a .profile-button::after {
-    position: absolute;
-    z-index: -1;
-    display: block;
-    content: ''; }
-  a .profile-button::before, a .profile-button::after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all .3s;
-    transition: all .3s; }
-  a .profile-button:hover {
-    background-color: #fff;
-    border-color: #aa0000;
-    color: #aa0000; }
-
+/*footer詳細ページ*/
 .footer-top {
   background-color: #aa0000;
   color: #fff; }
@@ -266,11 +285,6 @@ a .profile-button {
   height: auto;
   background-color: black;
   color: white; }
-
-/*グリッドの高さを揃える*/
-.row-height {
-  display: flex;
-  flex-wrap: wrap; }
 
 /*お客さまの声詳細ページ*/
 div .enjoy-css {
@@ -296,10 +310,10 @@ div ul#tab_headline {
   div ul#tab_headline li {
     border-bottom: 1px solid #aa0000;
     display: block;
-    width: 100%;
+    width: 99%;
     height: auto;
     line-height: auto;
-    margin: 1rem;
+    margin: 1rem 0;
     background-color: #fff;
     text-align: left;
     cursor: pointer; }
@@ -353,7 +367,6 @@ div ul#tab_content {
 
 /*Q and A詳細ページ*/
 .q-and-a-select {
-  padding: 0.1em 0.3em;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #aa0000 50%);
   background-position: 0 0;
   background-size: 200% auto;
@@ -366,6 +379,8 @@ div ul#tab_content {
     display: block; }
     .q-and-a-select a:hover {
       color: #fff; }
+  .q-and-a-select a {
+    padding: .5rem; }
 
 /*業務内容アーカイブページ*/
 .details {
@@ -408,7 +423,6 @@ div ul#tab_content {
 
 /*業務内容シングルページ*/
 .job-content-select {
-  padding: 0.1em 0.3em;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #aa0000 50%);
   background-position: 0 0;
   background-size: 200% auto;
@@ -421,6 +435,8 @@ div ul#tab_content {
     display: block; }
     .job-content-select a:hover {
       color: #fff; }
+  .job-content-select a {
+    padding: .5rem; }
 
 .hidden_box {
   margin: 2em 0;
@@ -450,7 +466,7 @@ div ul#tab_content {
 /* about us ページ */
 .first {
   height: 80vh;
-  background-image: url("images/img_house.jpg");
+  background-image: url("images/drone.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -496,7 +512,6 @@ div ul#tab_content {
 
 .article1 {
   position: relative;
-  /* overflow: hidden; */
   margin: -9% 0; }
   .article1:before {
     content: '';
