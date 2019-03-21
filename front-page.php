@@ -73,6 +73,7 @@
           </div>
         </div>
         <!-- </div> -->
+
         <!-- <div class="col-md-6 col-lg-3"> -->
         <div class="card my-2 img-thumbnail col-md-3" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
           <div class="card_img">
