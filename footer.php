@@ -17,7 +17,7 @@
 			</div>
 		</div>
     <div class="offset-1 col-10 offset-md-0 col-md-4 p-4">
-      <p>googlemap-test</p>
+      <p>GoogleMap</p>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.4543935540296!2d132.5018333151776!3d34.516713980482194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355a9cda84b1db85%3A0xd3044f8b9973f96c!2z5Y-45rOV5pu45aOrIOWcn-WcsOWutuWxi-iqv-afu-WjqyDooYzmlL_mm7jlo6sg44OJ44Ot44O844Oz5ris6YePIE9mZmljZSBZYW1hbmFrYSDvvIjlnJ_lnLDlrrblsYvoqr_mn7vlo6sg5bGx5LitIOWMoC_lj7jms5Xmm7jlo6sg5bGx5LitIOaZuuS_nS_ooYzmlL_mm7jlo6sg5bGx5LitIOmAsu-8iQ!5e0!3m2!1sen!2sjp!4v1551454722499" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
