@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="row footer-bottom">
-    <div class="offset-2 col-8 offset-md-0 col-md-4 p-4">
+    <div class="offset-1 col-10 offset-md-0 col-md-4 p-4">
       <img src="<?php echo get_template_directory_uri(); ?>/images/logo_white.png" class="img-fluid" alt="">
     </div>
 		<div class="offset-1 col-10 offset-md-0 col-md-4 p-4">
