@@ -25,11 +25,11 @@
   */
   class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
 
-      function start_lvl( &$output, $depth ){ // ul
-          $indent = str_repeat("\t",$depth); // indents the outputted HTML
-          $submenu = ($depth > 0) ? ' sub-menu' : '';
-          $output .= "\n$indent<ul class=\"dropdown-menu$submenu depth_$depth\">\n";
-      }
+    function start_lvl( &$output, $depth ){ // ul
+        $indent = str_repeat("\t",$depth); // indents the outputted HTML
+        $submenu = ($depth > 0) ? ' sub-menu' : '';
+        $output .= "\n$indent<ul class=\"dropdown-menu$submenu depth_$depth\">\n";
+    }
 
     function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ){ // li a span
 
@@ -70,9 +70,7 @@
           $item_output .= $args->after;
 
           $output .= apply_filters ( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
-
-      }
-
+    }
   }
   /*
   Register Navbar
