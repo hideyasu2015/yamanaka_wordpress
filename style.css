@@ -76,7 +76,6 @@ header {
   .navbar-nav li a {
     text-decoration: none;
     padding-bottom: 3px;
-    color: #aa0000;
     display: block; }
     .navbar-nav li a:after {
       content: '';
@@ -119,7 +118,7 @@ header {
     box-shadow: inset 5px -21px 14px 34px rgba(0, 0, 0, 0.68); }
 
 .card {
-  min-width: 230px !important; }
+  min-width: 220px !important; }
 
 .team-name-box {
   position: absolute;
