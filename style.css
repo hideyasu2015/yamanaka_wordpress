@@ -73,6 +73,8 @@ header {
   white-space: nowrap;
   margin: 0 8px;
   display: inline-block; }
+  .navbar-nav li .block {
+    display: block; }
   .navbar-nav li a {
     text-decoration: none;
     padding-bottom: 3px;
@@ -86,11 +88,16 @@ header {
     .navbar-nav li a:hover:after {
       width: 100%;
       border-bottom: 3px solid #aa0000; }
-    .navbar-nav li a .dropdown-menu .dropdown-item:active {
-      background-color: #aa0000;
-      color: #fff; }
+    .navbar-nav li a .dropdown-menu {
+      width: 260px; }
+      .navbar-nav li a .dropdown-menu .dropdown-item:active {
+        background-color: #aa0000;
+        color: #fff; }
   .navbar-nav li .whitespace {
     display: block; }
+
+ul .dropdown-menu {
+  min-width: 260px; }
 
 /*front page message*/
 #message-section h2 {
@@ -421,6 +428,17 @@ div ul#tab_content {
       transform: translateY(100%); }
 
 /*業務内容シングルページ*/
+.job_content_overlay {
+  margin-bottom: .75rem;
+  display: block;
+  padding: .5rem;
+  font-size: 1.2em;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  bottom: 0%;
+  background-color: white; }
+
 .job-content-select {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, #aa0000 50%);
   background-position: 0 0;
