@@ -9,14 +9,9 @@
   ?>
 <section>
   <div class="container">
-    <div class="row py-2 mx-xs-5 m-2" data-aos-offset="300" data-aos="fade-in" data-aos-duration="1500">
-      <div class="card bg-light text-black border-light">
-        <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/bg_img_law03.png" alt="">
-        <div class="card-img-overlay">
-          <h2 class="card-title" data-aos="fade-in" data-aos-delay="400" data-aos-easing="linear" data-aos-duration="800">メンバー紹介</h2>
-          <h3 class="card-text" data-aos="fade-in" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="800">【<?php the_title(); ?>】</h3>
-        </div>
-      </div>
+    <div class="d-block" class="py-2 mx-xs-5 m-2" data-aos-offset="300" data-aos="fade-in" data-aos-duration="1500">
+      <h2 class="member_line"><div data-aos="fade-in" data-aos-delay="400" data-aos-easing="linear" data-aos-duration="800">メンバー紹介</div></h2>
+      <h3 data-aos="fade-in" data-aos-delay="500" data-aos-easing="linear" data-aos-duration="800"><?php the_title(); ?></h3>
     </div>
   </div>
   <div class="container">
@@ -27,16 +22,17 @@
           <div class="card-body">
             <p class="card-text">
               <?php the_content(); ?>
-
   			</p>
           </div>
         </div>
       </div>
-
-      <div class="col-md-4">
-        <div class="card card-body">facebook<br>
-          <div class="fb-page" data-href="https://www.facebook.com/OfficeYamanaka/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/OfficeYamanaka/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OfficeYamanaka/">Office Yamanaka　土地家屋調査士・司法書士・行政書士・測量士</a></blockquote></div>
-        </div>
+      <div class="col-md-4 text-center">
+        <div class="face_book p-2"><i class="fab fa-facebook-f fa-fw fb-iconcolor"></i>facebook</div>
+          <div class="fb-page" data-href="https://www.facebook.com/OfficeYamanaka/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/OfficeYamanaka/" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/OfficeYamanaka/">Office Yamanaka　土地家屋調査士・司法書士・行政書士・測量士</a>
+            </blockquote>
+         </div>
       </div>
     </div>
     <br>

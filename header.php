@@ -36,14 +36,7 @@
 <body <?php body_class(); ?>>
   <!---->
   <header>
-    <div class="row justify-content-start header-top py-2">
-      <div class="col-md-2">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/images/tel.png" alt="">082-814-2658 </p>
-      </div>
-      <div class="col-md-2">
-        <p><img src="<?php echo get_template_directory_uri(); ?>/images/mail.png" alt="">info@sample.co.jp</p>
-      </div>
-    </div>
+    <div class="header-top"></div>
 
     <nav class="navbar navbar-expand-md navbar-light static-top">
       <div class="container">
