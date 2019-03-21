@@ -170,10 +170,12 @@ header {
     white-space: nowrap;
     margin: 0 8px;
     display: inline-block;
+     .block{
+        display: block;
+      }
     a {
       text-decoration: none;
       padding-bottom: 3px;
-      color: #aa0000;
       display: block;
       &:after {
         content: '';
@@ -186,16 +188,21 @@ header {
         width: 100%;
         border-bottom: 3px solid #aa0000;
       }
-      .dropdown-menu .dropdown-item:active {
+    .dropdown-menu{
+      width: 260px;
+       .dropdown-item:active {
         background-color: #aa0000;
         color: #fff;
       }
+    }
     }
     .whitespace {
       display: block;
     }
   }
 }
+ul .dropdown-menu {
+  min-width: 260px; }
 
 /*front page message*/
 #message-section {
@@ -458,6 +465,17 @@ div {
 }
 
 /*業務内容シングルページ*/
+.job_content_overlay{
+  margin-bottom: .75rem;
+  display: block;
+  padding: .5rem;
+  font-size: 1.2em;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  bottom: 0%;
+  background-color: rgba(255, 255, 255, 1.0);
+}
 .job-content-select {
   @include tab_list_effect;
   a{

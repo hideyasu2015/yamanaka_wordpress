@@ -6,7 +6,7 @@
         <div class="card bg-dark text-black border-light">
           <img class="card-img" src="<?php echo get_template_directory_uri(); ?>/images/various_images.png" alt="">
           <div class="card-img-overlay">
-            <h3 class="card-title" data-aos="fade-in" data-aos-delay="400" data-aos-easing="linear" data-aos-duration="800">公図・地積測量図・登記の経緯等の登記情報調査</h3>
+            <h3 class="job_content_overlay" data-aos="fade-in" data-aos-delay="400" data-aos-easing="linear" data-aos-duration="800">公図・地積測量図・登記の経緯等の登記情報調査</h3>
           </div>
         </div>
       </div>

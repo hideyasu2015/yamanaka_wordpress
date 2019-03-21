@@ -44,13 +44,13 @@
     <!--y:2/15 レスポンシブレイアウト-->
     <div class="card-deck">
       <!-- <div class="col-md-6 col-lg-3"> -->
-      <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-duration="1000">
+      <div class="card my-2 img-thumbnail col-md-3" data-aos="fade-left" data-aos-duration="1000">
         <div class="card_img">
           <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_1.png" alt="">
           <p class="mx-auto">山中  匠<br />&nbsp;土地家屋調査士</p>
         </div>
         <div class="card-body">
-          <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
+          <p class="card-text pt-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
             また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます</p>
           </div>
           <div class="card-footer">
@@ -59,13 +59,13 @@
         </div>
         <!-- </div> -->
         <!-- <div class="col-md-6 col-lg-3"> -->
-        <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-offset="150" data-aos-duration="1000">
+        <div class="card my-2 img-thumbnail col-md-3" data-aos="fade-left" data-aos-offset="150" data-aos-duration="1000">
           <div class="card_img">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_2.jpg" alt="">
             <p>山中  智保<br />&nbsp;司法書士</p>
           </div>
           <div class="card-body">
-            <p class="card-text p-3">時代に沿った仕方でちゃんとやっていきたい。司法書士も業務がどんどん増えてきている　けれども、登記の仕事はもちろんエキスパートでないといけないと思うし、これから広がっていく仕事も、外から見たら司法書士って、、
+            <p class="card-text pt-3">時代に沿った仕方でちゃんとやっていきたい。司法書士も業務がどんどん増えてきている　けれども、登記の仕事はもちろんエキスパートでないといけないと思うし、これから広がっていく仕事も、外から見たら司法書士って、、
             </p>
           </div>
           <div class="card-footer">
@@ -74,13 +74,13 @@
         </div>
         <!-- </div> -->
         <!-- <div class="col-md-6 col-lg-3"> -->
-        <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
+        <div class="card my-2 img-thumbnail col-md-3" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
           <div class="card_img">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_3.png" alt="">
-            <p>山中　渉<br />&nbsp;補助者</p>
+            <p>山中  渉<br />&nbsp;補助者</p>
           </div>
           <div class="card-body">
-            <p class="card-text p-3 pb-5"> 自分が今できることは機械を使って測ることがメインだと思うので、そしてそこから図面を描くことなので、そこはきっちり正確にできるようにとは思ってやっています。測量学もどんどん進歩していっているし。計算や測量法なんかも、、
+            <p class="card-text pt-3"> 自分が今できることは機械を使って測ることがメインだと思うので、そしてそこから図面を描くことなので、そこはきっちり正確にできるようにとは思ってやっています。測量学もどんどん進歩していっているし。計算や測量法なんかも、、
             </p>
           </div>
           <div class="card-footer">
@@ -89,13 +89,13 @@
         </div>
         <!-- </div>
         <div class="col-md-6 col-lg-3"> -->
-        <div class="card my-2 img-thumbnail col-lg-3" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
+        <div class="card my-2 img-thumbnail col-md-3" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
           <div class="card_img">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_4.png" alt="">
             <p>星野  木綿希<br />&nbsp;司法書士</p>
           </div>
           <div class="card-body">
-            <p class="card-text p-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
+            <p class="card-text pt-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
               また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
             </p>
           </div>
