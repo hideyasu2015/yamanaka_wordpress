@@ -172,6 +172,7 @@ header {
     display: inline-block;
      .block{
         display: block;
+        text-align: left;
       }
     a {
       text-decoration: none;
@@ -285,43 +286,26 @@ a .profile-button {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   .container .box-lists .customor-box {
-    height: 20vh;
+    height: 25vh;
     border: 1px solid #eeee;
     background-color: #fcfcfc;
     box-shadow: 2px 2px 5px -2px #000000;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.5vw;
+    font-size: 1rem;
     word-wrap: break-all;
   }
   .customor-box i {
     color: #aa0000;
   }
-}
-/*お客様の声スライドの矢印*/
-.arrows {
-  position: relative;
-  text-align: center;
-}
-.slick-next {
-  display: none;
-  width: 5rem;
-  background-color: #aa0000;
-  color: #fff;
-  padding: 10px;
-  left: 50px;
-  z-index: 10;
-  border: 0;
-}
-.slick-prev {
-  display: none;
-  width: 5rem;
-  background-color: #aa0000;
-  color: #fff;
-  padding: 10px;
-  right: 50px;
-  z-index: 10;
-  border: 0;
+  a{
+    text-decoration: none;
+    p {
+      @include red_button;
+      align-items: flex-end;
+    }
+  }
+
 }
 
 

@@ -112,33 +112,36 @@
     <div class="container">
       <h2 class="py-3" data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">お客さまの声</h2>
       <div class="box-lists row-eq-height">
-       <div class="slick">
+       <div class="row ">
           <?php
           $customerVoice = new WP_Query(array(
+            'posts_per_page' => 2,
             'post_type' => 'customer_voice'
           ));
           while($customerVoice->have_posts()){
             $customerVoice->the_post();
             ?>
-            <div class="wrap">
+            <div class="col-md-6">
+              <div class="wrap">
               <div class="row h-17 py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in" data-aos-duration="1000">
                 <div class="col-1 pl-2 pt-2"> <i class="fas fa-quote-left fa-lg fa-fw color-red"></i>
                 </div>
                 <div class="col-11 customor-voice pt-3">
                   <dl>
                     <dt><?php the_title();?></dt>
-                    <dd class="d-none d-md-block"><?php echo wp_trim_words(get_the_content(), 35, '...'); ?></dd>
+                    <dd class="d-block"><?php echo wp_trim_words(get_the_content(), 35, '...'); ?></dd>
                   </dl>
                   <a href="<?php the_permalink();?>">
-                    <p>read more</p>
+                    <p class="col-lg-4">read more</p>
                   </a>
                 </div>
               </div>
+              </div>
               <div class="row px-3">
-                <div class="col-md-4">
+                <div class="col-6 col-md-4">
                   <img src="<?php the_field(icon_img); ?>" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-8">
+                <div class="col-6 col-md-8">
                   <p style="font-size: 1.5vw;"><?php the_field('customer_name'); ?><br>
                     <small><?php the_field('company'); ?></small> </p>
                 </div>
@@ -147,13 +150,9 @@
             <?php }
             ?>
         </div>
-        <br>
-       <div class="arrows">
-        <div class="slick-next">前へ</div>
-        <div class="slick-prev">次へ</div>
-       </div>
       </div>
       </div>
+      <br>
     </section>
 
     <seciton id="blog-section">

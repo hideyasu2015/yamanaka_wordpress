@@ -74,7 +74,8 @@ header {
   margin: 0 8px;
   display: inline-block; }
   .navbar-nav li .block {
-    display: block; }
+    display: block;
+    text-align: left; }
   .navbar-nav li a {
     text-decoration: none;
     padding-bottom: 3px;
@@ -125,7 +126,7 @@ ul .dropdown-menu {
     box-shadow: inset 5px -21px 14px 34px rgba(0, 0, 0, 0.68); }
 
 .card {
-  min-width: 220px !important; }
+  min-width: 230px !important; }
 
 .team-name-box {
   position: absolute;
@@ -198,41 +199,51 @@ a .profile-button {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
   #box-section .container .box-lists .customor-box {
-    height: 20vh;
+    height: 25vh;
     border: 1px solid #eeee;
     background-color: #fcfcfc;
     box-shadow: 2px 2px 5px -2px #000000;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.5vw;
+    font-size: 1rem;
     word-wrap: break-all; }
   #box-section .customor-box i {
     color: #aa0000; }
-
-/*お客様の声スライドの矢印*/
-.arrows {
-  position: relative;
-  text-align: center; }
-
-.slick-next {
-  display: none;
-  width: 5rem;
-  background-color: #aa0000;
-  color: #fff;
-  padding: 10px;
-  left: 50px;
-  z-index: 10;
-  border: 0; }
-
-.slick-prev {
-  display: none;
-  width: 5rem;
-  background-color: #aa0000;
-  color: #fff;
-  padding: 10px;
-  right: 50px;
-  z-index: 10;
-  border: 0; }
+  #box-section a {
+    text-decoration: none; }
+    #box-section a p {
+      height: 54px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 54px;
+      outline: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      background-color: #aa0000;
+      border: 2px solid #aa0000;
+      color: #fff;
+      line-height: 50px;
+      display: block;
+      width: 100%;
+      align-items: flex-end; }
+      #box-section a p::before, #box-section a p::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: ''; }
+      #box-section a p::before, #box-section a p::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s; }
+      #box-section a p:hover {
+        background-color: #fff;
+        border-color: #aa0000;
+        color: #aa0000; }
 
 /*news */
 #blog-section .calender-red {
