@@ -39,17 +39,6 @@
 	<div id="fb-root"></div>
 	 <!--fbの埋め込みプラグイン-->
 	<script async defer src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.2"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/slick/slick.min.js"></script>
-	<script>
-	jQuery(document).ready(function(){
-	jQuery('.slick').slick({
-	 arrows: true,
-	 autoplay: true,
-	 slidesToShow:2,
-	 appendArrows: $('.arrows'),
-	 });
- });
-</script>
 <?php wp_footer(); ?>
 </body>
 </html>

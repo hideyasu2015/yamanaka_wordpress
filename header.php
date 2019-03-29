@@ -17,15 +17,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!--googlefonts-->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100" rel="stylesheet">
-
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
   <!-- Bootstrap -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
   crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <!--plugin-->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <!--favicon-->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
