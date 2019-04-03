@@ -21,14 +21,16 @@
   <br>
   <br>
   <br>
-  <div class="row justify-content-center">
-    <div class="col-8">
-      <div class="message-bottom p-2">
-        <h2 class="text-center" data-aos="zoom-out-down" data-aos-duration="1000">信頼されるまちの法律相談所</h2>
-      </div>
-      <div class="message-top p-2">
-        <div class="slide-left">
-          <p class="text-wrap text-center" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000">やまなか事務所は広島の司法書士/<br>土地家屋調査士/行政書士事務所です</p>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <div class="message-bottom p-2">
+          <h2 class="text-center" data-aos="zoom-out-down" data-aos-duration="1000">信頼されるまちの法律相談所</h2>
+        </div>
+        <div class="message-top p-2">
+          <div class="slide-left">
+            <p class="text-wrap text-center" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1000">やまなか事務所は広島の司法書士/<br>土地家屋調査士/行政書士事務所です</p>
+          </div>
         </div>
       </div>
     </div>
@@ -112,7 +114,7 @@
     <div class="container">
       <h2 class="py-3" data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">お客さまの声</h2>
       <div class="box-lists row-eq-height">
-       <div class="row ">
+        <div class="row">
           <?php
           $customerVoice = new WP_Query(array(
             'posts_per_page' => 2,
@@ -123,19 +125,19 @@
             ?>
             <div class="col-md-6">
               <div class="wrap">
-              <div class="row h-17 py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in" data-aos-duration="1000">
-                <div class="col-1 pl-2 pt-2"> <i class="fas fa-quote-left fa-lg fa-fw color-red"></i>
+                <div class="row h-17 py-2 mx-xs-5 m-2 customor-box" data-aos-offset="300" data-aos="fade-in" data-aos-duration="1000">
+                  <div class="col-1 pl-2 pt-2"> <i class="fas fa-quote-left fa-lg fa-fw color-red"></i>
+                  </div>
+                  <div class="col-11 customor-voice pt-3">
+                    <dl>
+                      <dt><?php the_title();?></dt>
+                      <dd class="d-block"><?php echo wp_trim_words(get_the_content(), 35, '...'); ?></dd>
+                    </dl>
+                    <a href="<?php the_permalink();?>">
+                      <p class="col-lg-4">read more</p>
+                    </a>
+                  </div>
                 </div>
-                <div class="col-11 customor-voice pt-3">
-                  <dl>
-                    <dt><?php the_title();?></dt>
-                    <dd class="d-block"><?php echo wp_trim_words(get_the_content(), 35, '...'); ?></dd>
-                  </dl>
-                  <a href="<?php the_permalink();?>">
-                    <p class="col-lg-4">read more</p>
-                  </a>
-                </div>
-              </div>
               </div>
               <div class="row px-3">
                 <div class="col-6 col-md-4">
@@ -144,13 +146,13 @@
                 <div class="col-6 col-md-8">
                   <p style="font-size: 1.5vw;"><?php the_field('customer_name'); ?><br>
                     <small><?php the_field('company'); ?></small> </p>
+                  </div>
                 </div>
               </div>
-            </div>
             <?php }
             ?>
+          </div>
         </div>
-      </div>
       </div>
       <br>
     </section>

@@ -191,7 +191,7 @@ header {
       }
     .dropdown-menu{
       width: 260px;
-       .dropdown-item:active {
+       &:active {
         background-color: #aa0000;
         color: #fff;
       }
@@ -203,7 +203,17 @@ header {
   }
 }
 ul .dropdown-menu {
-  min-width: 260px; }
+  min-width: 270px;
+  .dropdown-item {
+    padding: .25rem .5rem !important;
+    &:hover {
+      background-color: #fff ;
+    }
+    &:active {
+     background-color: #aa0000;
+   }
+  }
+}
 
 /*front page message*/
 #message-section {
@@ -387,6 +397,9 @@ div {
     }
   }
 }
+.custmor_voice_text{
+  text-align: left;
+}
 .customer-button {
   @include red_button;
 }
@@ -499,6 +512,9 @@ div {
 }
 
 /* about us ページ */
+#para1{
+  padding-top: 0rem;
+}
 .first {
   height: 80vh;
   background-image: url("images/drone.jpg");
