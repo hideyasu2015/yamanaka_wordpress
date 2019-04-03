@@ -58,28 +58,28 @@
           );
           ?>
         </div>
-        </div>
-        </nav>
-        </header>
-          <!-- <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-          <a class="nav-link pl-1" href="front-page.php">トップページ <span class="sr-only">(現位置)</span></a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link pl-1" href="page-business.php">業務内容</a>
-      </li>
-      <li class="nav-item">
-      <a class="nav-link pl-1" href="page-question.php">Q and A</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link pl-1" href="page-profile.php">事務所概要</a>
-  </li>
-  <li class="nav-item dropdown">
-  <a class="nav-link pl-1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">不動産調査</a>
-  <ul class="dropdown-menu">
-  <li><a class="dropdown-item" href="#">メニュー1</a></li>
-  <li><a class="dropdown-item" href="#">メニュー1</a></li>
-  <li><a class="dropdown-item" href="#">メニュー1</a></li>
+      </div>
+    </nav>
+  </header>
+  <!-- <ul class="navbar-nav ml-auto">
+  <li class="nav-item active">
+  <a class="nav-link pl-1" href="front-page.php">トップページ <span class="sr-only">(現位置)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link pl-1" href="page-business.php">業務内容</a>
+</li>
+<li class="nav-item">
+<a class="nav-link pl-1" href="page-question.php">Q and A</a>
+</li>
+<li class="nav-item">
+<a class="nav-link pl-1" href="page-profile.php">事務所概要</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link pl-1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">不動産調査</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#">メニュー1</a></li>
+<li><a class="dropdown-item" href="#">メニュー1</a></li>
+<li><a class="dropdown-item" href="#">メニュー1</a></li>
 </ul>
 </li>
 </ul> -->

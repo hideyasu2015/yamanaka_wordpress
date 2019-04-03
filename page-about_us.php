@@ -8,11 +8,12 @@ get_header();?>
   while ( have_posts() ) : the_post();
   ?>
 
-<section>
+
 <div id="para1">
   <div class="first">
     <div class="for-bgimage">
     <div class="about_us_titile">
+      <br>
       <h3 class="card-title" data-aos="fade-in" data-aos-delay="400" data-aos-easing="linear" data-aos-duration="800">事務所概要</h3>
       <p class="card-text" data-aos="fade-in" data-aos-delay="400" data-aos-easing="linear" data-aos-duration="800">OfficeYamanakaについて</p>
     </div>
@@ -56,7 +57,7 @@ get_header();?>
           <tr>
             <td>住所</td>
             <td>〒731-0231<br>
-              広島県広島市安佐北区亀山一丁目２番１９－１２号
+              広島県広島市安佐北区亀山一丁目2番19－12号
             </td>
           </tr>
           <tr>
@@ -105,13 +106,15 @@ get_header();?>
       <div class="row">
         <div class="col-md-10 offset-1">
     <table class="table table-borderless">
-     <tr><td>山中  守    広島第３７９号</td><td>日本土地家屋調査士連合会登録：昭和３２年１２月２日</td></tr>
-     <tr><td></td><td>広島県土地家屋調査士会入会 ：昭和４５年１月１０日</td></tr>
+     <tr><td>山中  守    広島第379号</td><td>日本土地家屋調査士連合会登録：昭和32年12月2日</td></tr>
+     <tr><td></td><td>広島県土地家屋調査士会入会 ：昭和45年１月１０日</td></tr>
 
-     <tr><td>山中  進    広島第１３５２号</td><td>日本土地家屋調査士会連合会登録：昭和５７年１月８日</td></tr>
-     <tr><td></td><td>広島県土地家屋調査士会入会 ：昭和５７年１月８日</td></tr>
+     <tr><td>山中  進    広島第1352号</td><td>日本土地家屋調査士会連合会登録：昭和57年1月8日</td></tr>
+     <tr><td></td><td>広島県土地家屋調査士会入会 ：昭和57年１月８日</td></tr>
 
-     <tr><td>山中  匠    広島第１８２４号</td><td>日本土地家屋調査士会連合会登録：平成23年2月10日</td></tr>
+     <tr><td>山中  匠    広島第1824号</td><td>日本土地家屋調査士会連合会登録：平成23年2月10日</td></tr>
+
+     <tr><td>星野  木綿希    広島第1047号</td><td>広島司法書士会登録：平成26年10月6日</td></tr>
 
     </table>
    </div>
@@ -121,7 +124,7 @@ get_header();?>
   <br><br>
 </div>
 
-</section>
+
 <?php
 endwhile;
 endif;

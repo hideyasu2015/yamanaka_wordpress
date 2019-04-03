@@ -91,14 +91,20 @@ header {
       border-bottom: 3px solid #aa0000; }
     .navbar-nav li a .dropdown-menu {
       width: 260px; }
-      .navbar-nav li a .dropdown-menu .dropdown-item:active {
+      .navbar-nav li a .dropdown-menu:active {
         background-color: #aa0000;
         color: #fff; }
   .navbar-nav li .whitespace {
     display: block; }
 
 ul .dropdown-menu {
-  min-width: 260px; }
+  min-width: 270px; }
+  ul .dropdown-menu .dropdown-item {
+    padding: .25rem .5rem !important; }
+    ul .dropdown-menu .dropdown-item:hover {
+      background-color: #fff; }
+    ul .dropdown-menu .dropdown-item:active {
+      background-color: #aa0000; }
 
 /*front page message*/
 #message-section h2 {
@@ -349,6 +355,9 @@ div ul#tab_content {
     div ul#tab_content li.current {
       display: block; }
 
+.custmor_voice_text {
+  text-align: left; }
+
 .customer-button {
   height: 54px;
   text-align: center;
@@ -492,6 +501,9 @@ div ul#tab_content {
     opacity: 1; }
 
 /* about us ページ */
+#para1 {
+  padding-top: 0rem; }
+
 .first {
   height: 80vh;
   background-image: url("images/drone.jpg");
