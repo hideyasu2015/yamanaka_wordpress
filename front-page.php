@@ -16,12 +16,11 @@
     </div>
   </div>
 </div>
-
+<div class="container">
 <section id="message-section">
   <br>
   <br>
   <br>
-  <div class="container">
     <div class="row justify-content-center">
       <div class="col-8">
         <div class="message-bottom p-2">
@@ -34,34 +33,31 @@
         </div>
       </div>
     </div>
-  </div>
 </section>
 <br>
 <br>
 <br>
 
 <section id="team-section">
-  <div class="container">
     <h2 class="py-3" data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">事務所メンバー</h2>
     <!--y:2/15 レスポンシブレイアウト-->
     <div class="card-deck">
-      <!-- <div class="col-md-6 col-lg-3"> -->
-      <div class="card my-2 img-thumbnail col-md-3" data-aos="fade-left" data-aos-duration="1000">
-        <div class="card_img">
-          <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_1.png" alt="">
-          <p class="mx-auto">山中  匠<br />&nbsp;土地家屋調査士</p>
-        </div>
-        <div class="card-body">
-          <p class="card-text pt-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
-            また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます</p>
-          </div>
-          <div class="card-footer">
+      <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-duration="1000">
+       <div class="card_img">
+        <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_1.png" alt="">
+         <p class="mx-auto">山中  匠<br />&nbsp;土地家屋調査士</p>
+       </div>
+       <div class="card-body">
+        <p class="card-text pt-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
+            また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
+        </p>
+       </div>
+       <div class="card-footer">
             <a href="https://yamanaka-office.hideyasu.xyz/member-1"><button class="profile-button mx-auto d-inline-block">Profile</button></a>
-          </div>
         </div>
-        <!-- </div> -->
-        <!-- <div class="col-md-6 col-lg-3"> -->
-        <div class="card my-2 img-thumbnail col-md-3" data-aos="fade-left" data-aos-offset="150" data-aos-duration="1000">
+       </div>
+       
+        <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="150" data-aos-duration="1000">
           <div class="card_img">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_2.jpg" alt="">
             <p>山中  智保<br />&nbsp;司法書士</p>
@@ -74,44 +70,38 @@
             <a href="https://yamanaka-office.hideyasu.xyz/member-2"><button class="profile-button mx-auto d-inline-block">Profile</button></a>
           </div>
         </div>
-        <!-- </div> -->
 
-        <!-- <div class="col-md-6 col-lg-3"> -->
-        <div class="card my-2 img-thumbnail col-md-3" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
+        <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
           <div class="card_img">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_3.png" alt="">
             <p>山中  渉<br />&nbsp;補助者</p>
           </div>
           <div class="card-body">
-            <p class="card-text pt-3"> 自分が今できることは機械を使って測ることがメインだと思うので、そしてそこから図面を描くことなので、そこはきっちり正確にできるようにとは思ってやっています。測量学もどんどん進歩していっているし。計算や測量法なんかも、、
-            </p>
+            <p class="card-text pt-3"> 自分が今できることは機械を使って測ることがメインだと思うので、そしてそこから図面を描くことなので、そこはきっちり正確にできるようにとは思ってやっています。
+              測量学もどんどん進歩していっているし。計算や測量法なんかも、、</p>
           </div>
           <div class="card-footer">
             <a href="https://yamanaka-office.hideyasu.xyz/member-3"><button class="profile-button mx-auto d-inline-block">Profile</button></a>
           </div>
         </div>
-        <!-- </div>
-        <div class="col-md-6 col-lg-3"> -->
-        <div class="card my-2 img-thumbnail col-md-3" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
+
+        <div class="card my-2 img-thumbnail" data-aos="fade-left" data-aos-offset="250" data-aos-duration="1000">
           <div class="card_img">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/images/member_4.png" alt="">
             <p>星野  木綿希<br />&nbsp;司法書士</p>
           </div>
           <div class="card-body">
-            <p class="card-text pt-3"> 先々代がこの可部の地で開業してより40年余、『境界の専門家』として、
-              また不動産の取引、家の新築、相続といった場面で不動産登記を通じて皆様の生活・地域社会のお役に立って行けるよう私自身も法令・実務における研鑽を重ねて参りたいと存じます。
-            </p>
+            <p class="card-text pt-3"> 私が心がけているのは、以前やったことのある業務でも、常に新しい気持ちで取り組む事です。
+              登記業務でうれしいときは、お客様や本人さん、そのご家族に、信頼してもらえた！と感じた瞬間です。｢また何かあったらお願いするね｣と言っていただけたときですね。</p>
           </div>
           <div class="card-footer">
             <a href="https://yamanaka-office.hideyasu.xyz/member-4"><button class="profile-button mx-auto d-inline-block">Profile</button></a>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <section id="box-section">
-    <div class="container">
       <h2 class="py-3" data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">お客さまの声</h2>
       <div class="box-lists row-eq-height">
         <div class="row">
@@ -134,7 +124,7 @@
                       <dd class="d-block"><?php echo wp_trim_words(get_the_content(), 35, '...'); ?></dd>
                     </dl>
                     <a href="<?php the_permalink();?>">
-                      <p class="col-lg-4">read more</p>
+                      <p>read more</p>
                     </a>
                   </div>
                 </div>
@@ -153,12 +143,10 @@
             ?>
           </div>
         </div>
-      </div>
       <br>
     </section>
 
     <seciton id="blog-section">
-      <div class="container">
         <h2 data-aos="fadeInUp" data-aos-offset="200" data-aos-duration="1000">NEWS</h2>
         <hr>
         <?php
@@ -170,7 +158,7 @@
           $news->the_post(); ?>
 
           <div class="row m-2 slide-left" data-aos="fade-in" data-aos-duration="1000">
-            <div class="col-3 col-md-2 ">
+            <div class="col-3 col-md-2">
               <div class="calender-red offset-md-1">
                 <time datetime="<?php the_time('Y年n月j日'); ?>">
                   <?php the_time('j日'); ?>
@@ -188,7 +176,7 @@
               </time>
               <p class="news-title"><?php the_title(); ?></p>
               <p class="news-desc"><?php echo wp_trim_words( get_the_content(), 20, '...' ); ?></p>
-              <a href="<?php the_permalink(); ?>" class="col-md-4 m-3">
+              <a href="<?php the_permalink(); ?>">
                 <p>read more</p>
               </a>
             </div>
@@ -196,7 +184,7 @@
           <hr>
         <?php }
         ?>
-      </div>
     </seciton>
+  </div>
 
     <?php get_footer();?>
