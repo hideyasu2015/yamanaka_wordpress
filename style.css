@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/*
-Theme name: office yamanaka
-Theme URI:
-Description: 司法書士/土地家屋調査士/行政書士事務所
-Version: 1.0
-Author: Yoshikawa
-*/
 body {
   padding-top: 5rem;
   box-sizing: border-box;
@@ -13,6 +6,9 @@ body {
   color: #333; }
   body:not(.home) section {
     padding-top: 5rem; }
+
+div .container #front-container {
+  overflow: hidden !important; }
 
 div, ul, li, h1, h2, h3, h4, h5, p {
   font-family: 'Noto Sans JP', sans-serif;
@@ -24,6 +20,10 @@ li {
 a {
   color: black;
   text-decoration: none; }
+  a:hover {
+    cursor: pointer; }
+  a:visited, a:link {
+    color: black; }
 
 /*各ページヘッダー画像*/
 .card-img-overlay {
@@ -131,9 +131,6 @@ ul .dropdown-menu {
     -webkit-box-shadow: inset 5px -21px 14px 34px rgba(0, 0, 0, 0.68);
     box-shadow: inset 5px -21px 14px 34px rgba(0, 0, 0, 0.68); }
 
-.card {
-  min-width: 230px !important; }
-
 .team-name-box {
   position: absolute;
   top: 50%;
@@ -188,11 +185,6 @@ a .profile-button {
     background-color: #fff;
     border-color: #aa0000;
     color: #aa0000; }
-
-/*グリッドの高さを揃える*/
-.row-height {
-  display: flex;
-  flex-wrap: wrap; }
 
 /*プロフィール個別ページ*/
 .member_line {
@@ -510,11 +502,15 @@ div ul#tab_content {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding-right: 0px;
+  padding-left: 0px; }
 
 .for-bgimage {
   background-color: rgba(255, 255, 255, 0.5);
-  height: 100vh; }
+  height: 100vh;
+  padding-right: 0px;
+  padding-left: 0px; }
 
 .about_us_titile {
   width: 100%;
@@ -584,5 +580,172 @@ div ul#tab_content {
     text-align: center;
     padding-top: 10vh;
     color: #2d2d2d; }
+
+.another {
+  margin-top: -30px;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 20px; }
+
+/* Timeline */
+/*===============*/
+/*Combined*/
+.timeline-container ul {
+  padding: 0px; }
+
+.timeline-container,
+.timeline-container li {
+  position: relative; }
+
+.timeline-container:after,
+.timeline-container li:before,
+.timeline-container li > div:before,
+.timeline-container li:first-child div:after,
+.timeline-container li:last-child div:after {
+  content: '';
+  position: absolute; }
+
+/* color */
+.timeline-container li > div,
+.timeline-container li:before,
+.timeline-container li > div:before,
+.timeline-container:after {
+  background-color: #dee2e6; }
+
+.timeline-container:after,
+.timeline-container li small,
+.timeline-container li:first-child div:after,
+.timeline-container li:last-child div:after {
+  left: 50%;
+  transform: translateX(-50%); }
+
+.timeline-container li small,
+.timeline-container li > div:before {
+  top: 50%;
+  transform: translateY(-50%); }
+
+/*clearfix*/
+.timeline-container li:after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.timeline-container li {
+  margin: 60px 0; }
+
+.timeline-container li:first-child {
+  margin-top: 0; }
+
+.timeline-container li:last-child {
+  margin-bottom: 0; }
+
+/*timeline content*/
+.timeline-container li > div {
+  width: 40%;
+  color: #333;
+  padding: 15px 25px;
+  border-radius: 1px; }
+
+.timeline-container li:nth-child(odd) > div {
+  float: left; }
+
+.timeline-container li:nth-child(even) > div {
+  float: right; }
+
+/* Main vertical line middile */
+.timeline-container:after {
+  width: 2px;
+  height: 100%;
+  top: 0;
+  bottom: 0; }
+
+/* date */
+.timeline-container li small {
+  position: absolute;
+  color: #333;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 20px; }
+
+.timeline-container li:nth-child(even) small {
+  margin-left: 0;
+  left: auto;
+  right: 50%;
+  margin-right: 20px; }
+
+/* Square */
+.timeline-container li:before {
+  height: 7px;
+  width: 8px;
+  border: 3px solid #fff;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+/* Horizontal line */
+.timeline-container li > div:before {
+  height: 2px;
+  left: 40%;
+  width: 10%; }
+
+.timeline-container li:nth-child(even) div:before {
+  left: auto;
+  right: 40%; }
+
+/* Remove the top part of main vertical line */
+.timeline-container li:first-child div:after,
+.timeline-container li:last-child div:after {
+  width: 2px;
+  top: 0;
+  height: 50%;
+  z-index: 1;
+  background-color: #dee2e6; }
+
+.timeline-container li:last-child div:after {
+  top: auto;
+  bottom: 0; }
+
+/* Responsive CSS */
+@media screen and (max-width: 767px) {
+  .timeline-container li:nth-child(odd) > div,
+  .timeline-container li:nth-child(even) > div {
+    float: right;
+    width: 95%; }
+
+  .timeline-container li:first-child div:after,
+  .timeline-container li:last-child div:after {
+    content: none; }
+
+  .timeline-container:after,
+  .timeline-container li:first-child div:after,
+  .timeline-container li:last-child div:after,
+  .timeline-container li:before {
+    top: 0;
+    left: 0; }
+
+  .timeline-container li > div:before {
+    height: 0px; }
+
+  .timeline-container li small,
+  .timeline-container li:nth-child(even) small {
+    top: 0;
+    left: 3%;
+    margin: 0;
+    right: auto; }
+
+  .timeline-container li {
+    margin: 0;
+    padding: 35px 0; }
+
+  .timeline-container li:last-child > div:after {
+    content: '';
+    height: 7px;
+    width: 8px;
+    position: absolute;
+    top: 100%;
+    border: 3px solid #fff;
+    z-index: 2;
+    background-color: #00c4cc; } }
 
 /*# sourceMappingURL=style.css.map */
