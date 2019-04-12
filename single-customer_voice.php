@@ -29,7 +29,7 @@
         <div class="enjoy-css shadow" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
           <div class="row justify-content-around">
         <div class="col-md-4 mx-3 mx-md-1 p-3 bg-light shadow custmor_voice_text">
-          <p>Q1. 今回の仕事の内容はどんな問題がありましたか？</p>
+          <p>Q1.今回の依頼した業務の内容はどんなものでしたか？</p>
         </div>
         <div class="col-md-7 pt-4 pt-md-2 py-3 custmor_voice_text">
           A. <?php the_field('q1'); ?>
@@ -39,23 +39,36 @@
         <div class="enjoy-css shadow" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
           <div class="row justify-content-around">
         <div class="col-md-4 mx-3 mx-md-1 p-3 bg-light shadow custmor_voice_text">
-          <p>Q2. 山中事務所に頼んで良かったと思った点はなんですか？</p>
+          <p>Q2. 今回の仕事の内容はどんな問題がありましたか？</p>
         </div>
         <div class="col-md-7 p-2 custmor_voice_text">
           A. <?php the_field('q2'); ?>
           </div>
         </div>
         </div>
+        
         <div class="enjoy-css shadow" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
           <div class="row justify-content-around">
-        <div class="col-md-4 mx-3 mx-md-1 p-3 bg-light shadow custmor_voice_text">
-          <p>Q3. これからもお願いしたいとお思いますか？</p>
+						<div class="col-md-4 mx-3 mx-md-1 p-3 bg-light shadow custmor_voice_text">
+							<p>Q3. 山中事務所に頼んで良かったと思った点はなんですか？</p>
+        			</div>
+							<div class="col-md-7 p-2 custmor_voice_text">
+							A. <?php the_field('q3'); ?>
+        			</div>
+        		</div>
         </div>
-        <div class="col-md-7 p-2 custmor_voice_text">
-          A. <?php the_field('q3'); ?>
+        
+        <div class="enjoy-css shadow" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+          <div class="row justify-content-around">
+						<div class="col-md-4 mx-3 mx-md-1 p-3 bg-light shadow custmor_voice_text">
+							<p>Q4. これからもお願いしたいとお思いますか？</p>
+        			</div>
+							<div class="col-md-7 p-2 custmor_voice_text">
+							A. <?php the_field('q4'); ?>
+        			</div>
+        		</div>
         </div>
-        </div>
-        </div>
+        
       </div>
 
         <div class="col-md-4 m-3">
