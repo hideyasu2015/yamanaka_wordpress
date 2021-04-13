@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header(); ?>
 
 
 <section>
@@ -22,11 +22,11 @@
             'post_type' => 'q_and_a',
             'order' => 'ASC'
           ));
-          while($QandA->have_posts()){
+          while ($QandA->have_posts()) {
             $QandA->the_post(); ?>
-            <?php if ($QandA->current_post == 0) :?>
+            <?php if ($QandA->current_post == 0) : ?>
               <li class="current q-and-a-select"><a href="javascript:void(0)"><?php the_title(); ?></a></li>
-            <?php  else :?>
+            <?php else : ?>
               <li class="q-and-a-select"><a href="javascript:void(0)"><?php the_title(); ?></a></li>
             <?php endif; ?>
           <?php }
@@ -42,20 +42,22 @@
             'post_type' => 'q_and_a',
             'order' => 'ASC'
           ));
-          while($QandA->have_posts()){
+          while ($QandA->have_posts()) {
             $QandA->the_post(); ?>
-            <?php if ($QandA->current_post == 0) :?>
+            <?php if ($QandA->current_post == 0) : ?>
               <li class="current">
                 <h4><?php the_title(); ?></h4>
                 <br>
                 <hr>
-                <?php the_content(); ?></li>
-            <?php  else :?>
+                <?php the_content(); ?>
+              </li>
+            <?php else : ?>
               <li>
                 <h4><?php the_title(); ?></h4>
                 <br>
                 <hr>
-                <?php the_content(); ?></li>
+                <?php the_content(); ?>
+              </li>
             <?php endif; ?>
           <?php }
           ?>
@@ -66,4 +68,4 @@
 </section>
 
 
-<?php get_footer();?>
+<?php get_footer(); ?>
