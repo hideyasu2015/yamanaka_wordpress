@@ -747,5 +747,7 @@ div ul#tab_content {
     border: 3px solid #fff;
     z-index: 2;
     background-color: #00c4cc; } }
+button:focus, .customor-box button:focus {
+  outline: none; }
 
 /*# sourceMappingURL=style.css.map */

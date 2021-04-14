@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
 
   <!--favicon-->
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
 
   <?php wp_head(); ?>
