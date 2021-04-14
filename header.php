@@ -60,7 +60,7 @@
             </li>
             <li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-q_and_a nav-item nav-item-92"><a href="<?php echo home_url(); ?>/q_and_a/boundaries/" class="nav-link pl-1">Q and A</a></li>
             <li id="menu-item-34" class="menu-item menu-item-type-post_type_archive menu-item-object-customer_voice nav-item nav-item-34"><a href="<?php echo home_url(); ?>/customer_voice/" class="nav-link pl-1">お客様の声</a></li>
-            <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-26 current_page_item active nav-item nav-item-28"><a href="<?php echo home_url(); ?>/about/" class="nav-link pl-1">事務所概要</a></li>
+            <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-26 current_page_item active nav-item nav-item-28"><a href="<?php echo home_url(); ?>/about_us/" class="nav-link pl-1">事務所概要</a></li>
           </ul>
 
         </div>

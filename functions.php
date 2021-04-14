@@ -71,6 +71,6 @@ function remove_menus()
   //ツール非表示
   remove_menu_page('tools.php');
   //CPT UI非表示         
-  // remove_menu_page('cptui_main_menu');
+  remove_menu_page('cptui_main_menu');
 }
 add_action('admin_menu', 'remove_menus');
